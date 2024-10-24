@@ -1,0 +1,3237 @@
+Command: vcs -full64 +v2k -sverilog -lca +vc -debug_all -notice -Mupdate -error=noZMMCM \
++notimingcheck -kdb +nospecy +LDFLAGS -timescale=1ns/1ns -f ph1a400_lib.f -f sgdma128_src.f \
+-top tb_sgdma_fsim +incdir+../def/ +incdir+../../src/sgdma_ip/def +define+RTL_SIM+CASE41+FSDB_ON+DEBUG_MODE \
+-P /exportEDA/SYNOPSYS/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/novas.tab \
+/exportEDA/SYNOPSYS/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/pli.a -o simv \
+-l vcs_com.log +define+SIM_FSDB -R +fsdb +autoflush -l vcs_sim.log
+                         Chronologic VCS (TM)
+      Version N-2017.12-SP2-5_Full64 -- Fri Apr 21 15:44:02 2023
+               Copyright (c) 1991-2017 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS/VCS-MX Release Notes
+
+Parsing design file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv'
+Parsing design file '../def/bdf.vh'
+Parsing design file '../def/cfg_addr_table.vh'
+Parsing design file '../def/dt_para.vh'
+Parsing design file '../bfm/dbi_master_bfm.v'
+Parsing design file '../ip/sfifo512x32_sim.v'
+Parsing design file '../bfm/msi_int_bfm.v'
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/msi_int_bfm.v'.
+Parsing included file '../def/dt_para.vh'.
+Back to file '../bfm/msi_int_bfm.v'.
+Parsing included file '../def/bdf.vh'.
+Back to file '../bfm/msi_int_bfm.v'.
+Parsing design file '../bfm/sgdma_rc_exam.v'
+Parsing included file '../def/dt_para.vh'.
+Back to file '../bfm/sgdma_rc_exam.v'.
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/sgdma_rc_exam.v'.
+Parsing included file '../def/bdf.vh'.
+Back to file '../bfm/sgdma_rc_exam.v'.
+Parsing design file '../ip/pcie_rc_core.v'
+Parsing design file '../bfm/pcie_rx_bfm.v'
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/pcie_rx_bfm.v'.
+Parsing included file '../def/dt_para.vh'.
+Back to file '../bfm/pcie_rx_bfm.v'.
+Parsing design file '../bfm/pcie_tx_bfm.v'
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/pcie_tx_bfm.v'.
+Parsing included file '../def/dt_para.vh'.
+Back to file '../bfm/pcie_tx_bfm.v'.
+Parsing design file '../ip/safifo512x128.v'
+Parsing design file '../bfm/ip_cfginit.v'
+Parsing included file '../def/cfg_addr_table.vh'.
+Back to file '../bfm/ip_cfginit.v'.
+Parsing included file '../def/bdf.vh'.
+Back to file '../bfm/ip_cfginit.v'.
+Parsing design file '../bfm/ip_regrw.v'
+Parsing included file '../def/dt_para.vh'.
+Back to file '../bfm/ip_regrw.v'.
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/ip_regrw.v'.
+Parsing included file '../def/bdf.vh'.
+Back to file '../bfm/ip_regrw.v'.
+Parsing design file '../bfm/ip_datarw.v'
+Parsing included file '../def/dt_para.vh'.
+Back to file '../bfm/ip_datarw.v'.
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/ip_datarw.v'.
+Parsing design file '../bfm/tlp_access_rc.v'
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/tlp_access_rc.v'.
+Parsing included file '../def/bdf.vh'.
+Back to file '../bfm/tlp_access_rc.v'.
+Parsing design file '../ip/ram128x10.v'
+Parsing design file '../bfm/byps_cpl.v'
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../bfm/byps_cpl.v'.
+Parsing design file '../../src/sgdma_ip/src/sys_ctrl.v'
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_ip/src/sys_ctrl.v'.
+Parsing design file '../../src/top/sgdma_subsys_exam.v'
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/top/sgdma_subsys_exam.v'.
+Parsing included file '../../tb/def/tlp_fmt_type.vh'.
+Back to file '../../src/top/sgdma_subsys_exam.v'.
+Parsing included file '../../tb/def/dt_para.vh'.
+Back to file '../../src/top/sgdma_subsys_exam.v'.
+Parsing design file '../../src/sgdma_ip/def/para_def.vh'
+Parsing design file '../../src/sgdma_ip/ip/ram512x64.v'
+Parsing design file '../../src/sgdma_ip/ip/ram512x128.v'
+Parsing design file '../../src/sgdma_ip/ip/safifo1024x64.v'
+Parsing design file '../../src/sgdma_ip/ip/safifo512x128.v'
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/ip/safifo512x128.v, 14
+  Previously declared at:"../ip/safifo512x128.v", 14
+  This module will be overridden by the last declaration.
+  
+
+Parsing design file '../../src/sgdma_ip/ip/dram32x13.v'
+Parsing design file '../../src/sgdma_ip/ip/ram512x27.v'
+Parsing design file '../../src/sgdma_ip/ip/sfifo512x16_sim.v'
+Parsing design file '../../src/sgdma_ip/ip/sfifo512x128_sim.v'
+Parsing design file '../../src/sgdma_ip/ip/sfifo512x64_sim.v'
+Parsing design file '../../src/sgdma_ip/ip/pcie_ep_core.v'
+Parsing design file '../../src/sgdma_ip/src/sgdma_subsys.v'
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_ip/src/sgdma_subsys.v'.
+Parsing design file '../../src/sgdma_ip/src/status_sig.v'
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_ip/src/status_sig.v'.
+Parsing design file '../../src/sgdma_ip/src/sgdma_ip_all.enc.v'
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_ip/src/sgdma_ip_all.enc.v'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/../def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 245
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_ip/src/sgdma_ip_all.enc.v'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 12
+  Previously declared at:"../../src/sgdma_ip/src/sgdma_ip_all.enc.v", 245
+  This module will be overridden by the last declaration.
+  
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/../def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+
+Warning-[OPD] Override previous declaration
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+Parsing design file '../../src/sgdma_app/src/usr_regrw.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/usr_regrw.v'.
+Parsing design file '../../src/sgdma_app/src/dma_regrw.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/dma_regrw.v'.
+Parsing design file '../../src/sgdma_app/src/cfg_regrw.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/cfg_regrw.v'.
+Parsing design file '../../src/sgdma_app/src/sgdma_app.v'
+Parsing included file '../../src/sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/sgdma_app.v'.
+Parsing included file '../../src/sgdma_ip/def/../../../tb/def/tlp_fmt_type.vh'.
+Back to file '../../src/sgdma_app/src/sgdma_app.v'.
+Parsing included file '../../src/sgdma_ip/def/../../../tb/def/dt_para.vh'.
+Back to file '../../src/sgdma_app/src/sgdma_app.v'.
+Parsing design file '../../src/sgdma_app/src/app_tst_ctrl.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/app_tst_ctrl.v'.
+Parsing design file '../../src/sgdma_app/src/usr_c2h0r.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/usr_c2h0r.v'.
+Parsing included file '../../src/sgdma_ip/def/../../../tb/def/tlp_fmt_type.vh'.
+Back to file '../../src/sgdma_app/src/usr_c2h0r.v'.
+Parsing included file '../../src/sgdma_ip/def/../../../tb/def/dt_para.vh'.
+Back to file '../../src/sgdma_app/src/usr_c2h0r.v'.
+Parsing design file '../../src/sgdma_app/src/usr_lp0rw.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/usr_lp0rw.v'.
+Parsing design file '../../src/sgdma_app/src/usr_h2c0w.v'
+Parsing included file '../../src/sgdma_ip/def/../../sgdma_ip/def/para_def.vh'.
+Back to file '../../src/sgdma_app/src/usr_h2c0w.v'.
+Parsing included file '../../src/sgdma_ip/def/../../../tb/def/tlp_fmt_type.vh'.
+Back to file '../../src/sgdma_app/src/usr_h2c0w.v'.
+Parsing included file '../../src/sgdma_ip/def/../../../tb/def/dt_para.vh'.
+Back to file '../../src/sgdma_app/src/usr_h2c0w.v'.
+Parsing design file '../../src/sgdma_app/ip/ram512x32.v'
+Parsing design file '../top/tb_sgdma_fsim.v'
+Parsing included file '../def/dt_para.vh'.
+Back to file '../top/tb_sgdma_fsim.v'.
+Parsing included file '../def/tlp_fmt_type.vh'.
+Back to file '../top/tb_sgdma_fsim.v'.
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_arith.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_bram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_clk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_dram16x4.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_dram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_fifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_gate.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_io.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_ramfifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_adder.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_alu2b.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_basic.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_lut.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_mux4.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_seq.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_bram32k.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_bram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_clk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_csb.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_dff.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_fifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_glbl.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_lslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_mslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_mult18.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_osc.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_pll.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_sdram_2m_32.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_adder.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_alu2b.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_basic.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_lut.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_mux4.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_seq.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_phy_glbl.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_arith.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_config_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram32x16r8.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram32x16.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram64x8r16.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram64x8.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dynamic_idelay.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_fifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_gate.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_iobuf.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_iotribuf.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_io.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_pvt.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_shifter.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_shifterx16.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_shifterx8.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_slice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ts.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_clk_aligner.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_config_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ddr4_cal.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ddr_bank.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ddr_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dffshifter.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dqs.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dramhardcon.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspadd.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dsplogic.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspmreg.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspmult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspreg.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dsptadd.v'
+
+Warning-[LFCOR] Library file or dir cannot be opened
+  Library file 
+  '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dsp.v' 
+  cannot be opened for reading due to 'No such file or directory', will skip 
+  it.
+  The library was specified from command line through -y or -v.
+
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_f78mux.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_f7mux.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_fifoctrl.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_gclk.v'
+
+Warning-[LFCOR] Library file or dir cannot be opened
+  Library file 
+  '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hclk.v' 
+  cannot be opened for reading due to 'No such file or directory', will skip 
+  it.
+  The library was specified from command line through -y or -v.
+
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_pzq.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hr_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ioclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_lclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_lclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_lslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mipiio.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mlclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mlclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_oscdiv.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_osc.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pvt.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_sclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_serdes_dual.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_serdes_dual_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_serdes_dual_v3.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_shifterhardcon.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_tie.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_trng.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ts.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_clk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pll.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_mlclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_ioclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_gsr.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_gclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_sclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_arith.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_bram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_clk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_dram16x4.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_dram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_fifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_gate.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_io.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_logic_ramfifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_adder.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_alu2b.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_basic.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_lut.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_mux4.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_map_seq.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_bram32k.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_bram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_clk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_csb.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_dff.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_fifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_glbl.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_lslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_mslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_mult18.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_osc.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_pll.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/al/al_phy_sdram_2m_32.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_adder.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_alu2b.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_basic.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_lut.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_mux4.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_map_seq.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/common/al_phy_glbl.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_arith.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_config_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram32x16r8.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram32x16.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram64x8r16.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram64x8.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dynamic_idelay.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_fifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_gate.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_iobuf.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_iotribuf.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_io.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_mult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_pvt.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_shifter.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_shifterx16.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_shifterx8.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_slice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ts.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_clk_aligner.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_config_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ddr4_cal.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ddr_bank.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ddr_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dffshifter.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dqs.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dramhardcon.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspadd.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dsplogic.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspmreg.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspmult.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dspreg.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dsptadd.v'
+
+Warning-[LFCOR] Library file or dir cannot be opened
+  Library file 
+  '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_dsp.v' 
+  cannot be opened for reading due to 'No such file or directory', will skip 
+  it.
+  The library was specified from command line through -y or -v.
+
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_f78mux.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_f7mux.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_fifoctrl.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_gclk.v'
+
+Warning-[LFCOR] Library file or dir cannot be opened
+  Library file 
+  '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hclk.v' 
+  cannot be opened for reading due to 'No such file or directory', will skip 
+  it.
+  The library was specified from command line through -y or -v.
+
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_pzq.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hr_bankref.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ioclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_lclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_lclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_lslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mipiio.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mlclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mlclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_mslice.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_oscdiv.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_osc.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pad.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pvt.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_sclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_serdes_dual.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_serdes_dual_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_serdes_dual_v3.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_shifterhardcon.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_tie.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_trng.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_ts.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_config.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_clk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pll.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_mlclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_hp_ioclk.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_gsr.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_gclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_sclk_v2.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram.v'
+Parsing library file '/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v'
+Top Level Modules:
+       tb_sgdma_fsim
+TimeScale is 1 ps / 10 fs
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[TFIPC] Too few instance port connections
+../ip/pcie_rc_core.v, 744
+"PH1_PHY_PCIE_V2 #(.DEVICE_TYPE("RC"), .APP_DRS_READY(1'b0), .APP_PF_FRS_READY(2'b0), .APP_VF_FRS_READY(4'b0), .PIPE_PHY_CTRL_SEL(3'b0), .PIPE_PHY0_MPLLA_FORCE_EN("DISABLE"), .PIPE_PHY0_MPLLB_FORCE_EN("DISABLE"), .PIPE_PHY1_MPLLA_FORCE_EN("DISABLE"), .PIPE_PHY1_MPLLB_FORCE_EN("DISABLE"), .PIPE_PHY0_RX0_TERMINATION(1'b1), .PIPE_PHY0_RX1_TERMINATION(1'b1), .PIPE_PHY1_RX0_TERMINATION(1'b1), .PIPE_PHY1_RX1_TERMINATION(1'b1), .PIPE_PHY_MPLLA_RECAL_BANK_SEL(2'b0), .PIPE_PHY_MPLLB_RECAL_BANK_SEL(2'b0), .PIPE_PHY_MPLLA_RECAL_BANK_SEL_OVRD_EN("DISABLE"), .PIPE_PHY_MPLLB_RECAL_BANK_SEL_OVRD_EN("DISABLE"), .PIPE_PHY_SUP_MISC_OVRD_EN("DISABLE"), .PIPE_PHY_MPLLA_BANDWIDTH(16'b1010000001000101), .PIPE_PHY_MPLLA_DIV_CLK_EN("DISABLE"), .PIPE_PHY_MPLLA_DIV_MULTIPLIER(7'b ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v, 181
+"PH1_LOGIC_ERAM #(.DATA_WIDTH_A(DATA_WIDTH), .MODE("PDPW"), .ADDR_WIDTH_A(ADDR_WIDTH), .IMPLEMENT(IMPLEMENT)) u5( .dia (di),  .addra (write_addr),  .cea (1'b1),  .bea (0),  .ocea (1'b1),  .clka (clk),  .wea (valid_wrreq),  .rsta (rst),  .dib (0),  .addrb (ram_read_addr),  .ceb (ram_read_req),  .beb (0),  .oceb (1'b1),  .clkb (clk),  .web (1'b0),  .rstb (rst),  .dob (ram_q));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../ip/ram128x10.v, 69
+"PH1_LOGIC_ERAM #(.DATA_WIDTH_A(DATA_WIDTH_A), .DATA_WIDTH_B(DATA_WIDTH_B), .ADDR_WIDTH_A(ADDR_WIDTH_A), .ADDR_WIDTH_B(ADDR_WIDTH_B), .DATA_DEPTH_A(DATA_DEPTH_A), .DATA_DEPTH_B(DATA_DEPTH_B), .MODE("PDPW"), .REGMODE_A(REGMODE_A), .REGMODE_B(REGMODE_B), .WRITEMODE_A(WRITEMODE_A), .WRITEMODE_B(WRITEMODE_B), .IMPLEMENT("20K(FAST)"), .ECC_ENCODE("DISABLE"), .ECC_DECODE("DISABLE"), .CLKMODE("SYNC"), .SSROVERCE("DISABLE"), .OREGSET_A("SET"), .OREGSET_B("SET"), .RESETMODE_A(RESETMODE_A), .RESETMODE_B(RESETMODE_B), .ASYNC_RESET_RELEASE_A("SYNC"), .ASYNC_RESET_RELEASE_B("SYNC"), .INIT_FILE("NONE"), .FILL_ALL("NONE")) inst( .dia (dia),  .dib ({10 {1'b0}}),  .addra (addra),  .addrb (addrb),  .cea (cea),  .ceb (ceb),  .ocea (1'b0),  .oceb (1'b0),  .clka (clka),  .cl ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../ip/sfifo512x32_sim.v, 42
+"PH1_PHY_CONFIG_V2 #(.JTAG_PERSISTN("DISABLE"), .SPIX4_PERSISTN("ENABLE")) config_inst();"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../ip/sfifo512x32_sim.v, 52
+"PH1_PHY_FIFOCTRL #(.FIFO_AE(14'b00110000000000), .FIFO_AF(14'b11001111100000), .FIFO_ASYNC_RESET_RELEASE("SYNC"), .FIFO_DATA_WIDTH("40"), .FIFO_FIRSTWRITE_RD("DISABLE"), .FIFO_SYNC("SYNC")) fifo_inst_syn_1( .fifo_rclk (clk),  .fifo_re (re),  .fifo_rrst (rrst),  .fifo_wclk (clk),  .fifo_we (we),  .fifo_wrst (wrst),  .fifo_empty (empty_flag),  .fifo_full (full_flag),  .fifo_ore (fifo_inst_syn_34),  .fifo_owe (fifo_inst_syn_33),  .fifo_rdpointer ({open_n201, fifo_rdpointer, open_n202, open_n203, open_n204, open_n205, open_n206}),  .fifo_wrpointer ({open_n207, fifo_wrpointer, open_n208, open_n209, open_n210, open_n211, open_n212}),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_waddr (fifo_inst_syn_3),  .fifoctrl_we (fifo_ ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../ip/sfifo512x32_sim.v, 96
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSA1("1"), .CSB0("1"), .CSB1("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .FIFOMODE("ENABLE"), .HADDRCAS_A("FIFO"), .HADDRCAS_B("FIFO"), .LADDRCAS_A("FIFO"), .LADDRCAS_B("FIFO"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_2( .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, open_n269, open_n270}),  .csb ({fifo_inst_syn_34, open_n271, open_n272}),  .dia (di[15:0]),  .dia_extra (di[19:16]),  .dib ({open_n273, open_n274, open_n275, open_n276, di[31:20]}),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_sy ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../bfm/tlp_access_rc.v, 1589
+"byps_cpl u_byps_cpl( .core_clk (core_clk),  .core_rst_n (core_rst_n),  .rc_bdf (rc_bdf),  .ep_bdf (ep_bdf),  .radm_bypass_data (radm_bypass_data),  .radm_bypass_dwen (radm_bypass_dwen),  .radm_bypass_dv (radm_bypass_dv),  .radm_bypass_hv (radm_bypass_hv),  .radm_bypass_eot (radm_bypass_eot),  .radm_bypass_dllp_abort (radm_bypass_dllp_abort),  .radm_bypass_tlp_abort (radm_bypass_tlp_abort),  .radm_bypass_ecrc_err (radm_bypass_ecrc_err),  .radm_bypass_addr (radm_bypass_addr),  .radm_bypass_fmt (radm_bypass_fmt),  .radm_bypass_tc (radm_bypass_tc),  .radm_bypass_attr (radm_bypass_attr),  .radm_bypass_reqid (radm_bypass_reqid),  .radm_bypass_type (radm_bypass_type),  .radm_bypass_tag (radm_bypass_tag),  .radm_bypass_func_num (radm_bypass_func_num),  .radm_by ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../bfm/sgdma_rc_exam.v, 724
+"pcie_tx_bfm u_tx_bfm( .core_rst_n ((core_rst_n_c & h2c_rstn)),  .core_clk (core_clk_c),  .h2c_fm_idt (h2c_fm_idt),  .wdscp_idt (wdscp_idt),  .rdscp_idt (rdscp_idt),  .trgtlookup_id_i (trgtlookup_id),  .trgtlookup_id_rden_o (trgtlookup_id_rden),  .mrd_rden_o (mrd_rden),  .mrd_q_i (mrd_q),  .mrd_rdempty_i (mrd_rdempty),  .client0_addr_align_en_o (client1_addr_align_en),  .client0_tlp_byte_en_o (client1_tlp_byte_en),  .client0_header_data_o ({client1_remote_req_id, client1_tlp_tid[7:0], r10, client1_tlp_addr[6:0], completer1_id, client1_cpl_status, client1_cpl_bcm, client1_cpl_byte_cnt, r11, client1_tlp_fmt, client1_tlp_type, t19, client1_tlp_tc, t18, client1_tlp_attr[2], r12, client1_tlp_td, client1_tlp_ep, client1_tlp_attr[1:0], r13, dw1_len}),  .client0 ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../bfm/sgdma_rc_exam.v, 869
+"msi_int_bfm u_int_bfm( .core_clk (core_clk_c),  .core_rst_n ((core_rst_n_c & h2c_rstn)),  .radm_trgt1_dv (radm_trgt1_dv),  .radm_trgt1_hv (radm_trgt1_hv),  .radm_trgt1_eot (radm_trgt1_eot),  .radm_trgt1_tlp_abort (radm_trgt1_tlp_abort),  .radm_trgt1_dllp_abort (radm_trgt1_dllp_abort),  .radm_trgt1_ecrc_err (radm_trgt1_ecrc_err),  .radm_trgt1_dwen (radm_trgt1_dwen),  .radm_trgt1_fmt (radm_trgt1_fmt),  .radm_trgt1_attr (radm_trgt1_attr),  .radm_trgt1_func_num (radm_trgt1_func_num),  .radm_trgt1_type (radm_trgt1_type),  .radm_trgt1_tc (radm_trgt1_tc),  .radm_trgt1_reqid (radm_trgt1_reqid),  .radm_trgt1_data (radm_trgt1_data),  .radm_trgt1_first_be (radm_trgt1_first_be),  .radm_trgt1_last_be (radm_trgt1_last_be),  .radm_trgt1_addr (radm_trgt1_addr),  .radm_ ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 45
+"PH1_PHY_CONFIG #(.DONE_PERSISTN("DISABLE"), .INITN_PERSISTN("DISABLE"), .JTAG_PERSISTN("DISABLE"), .PROGRAMN_PERSISTN("DISABLE"), .SPIX4_PERSISTN("ENABLE")) config_inst();"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 55
+"PH1_PHY_FIFOCTRL #(.FIFO_AE(14'b00110000000000), .FIFO_AF(14'b11001111100000), .FIFO_ASYNC_RESET_RELEASE("SYNC"), .FIFO_DATA_WIDTH("40"), .FIFO_FIRSTWRITE_RD("DISABLE"), .FIFO_SYNC("SYNC")) fifo_inst_syn_1( .fifo_rclk (clk),  .fifo_re (re),  .fifo_rrst (rrst),  .fifo_wclk (clk),  .fifo_we (we),  .fifo_wrst (wrst),  .fifo_empty (empty_flag),  .fifo_full (full_flag),  .fifo_ore (fifo_inst_syn_34),  .fifo_owe (fifo_inst_syn_33),  .fifo_rdpointer ({open_n147, fifo_rdpointer, open_n148, open_n149, open_n150, open_n151, open_n152}),  .fifo_wrpointer ({open_n153, fifo_wrpointer, open_n154, open_n155, open_n156, open_n157, open_n158}),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_waddr (fifo_inst_syn_3),  .fifoctrl_we (fifo_ ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 101
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSA1("1"), .CSB0("1"), .CSB1("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .FIFOMODE("ENABLE"), .HADDRCAS_A("FIFO"), .HADDRCAS_B("FIFO"), .LADDRCAS_A("FIFO"), .LADDRCAS_B("FIFO"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_2( .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, open_n215, open_n216}),  .csb ({fifo_inst_syn_34, open_n217, open_n218}),  .dia (di[15:0]),  .dia_extra (di[19:16]),  .dib (di[35:20]),  .dib_extra (di[39:36]),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_wad ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 147
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSA1("1"), .CSB0("1"), .CSB1("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .FIFOMODE("ENABLE"), .HADDRCAS_A("FIFO"), .HADDRCAS_B("FIFO"), .LADDRCAS_A("FIFO"), .LADDRCAS_B("FIFO"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_35( .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, open_n313, open_n314}),  .csb ({fifo_inst_syn_34, open_n315, open_n316}),  .dia (di[55:40]),  .dia_extra (di[59:56]),  .dib ({open_n317, open_n318, open_n319, open_n320, open_n321, open_n322, open_n323, open_n324, open_n325, open_n326, open_n327 ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 49
+"PH1_PHY_CONFIG #(.DONE_PERSISTN("DISABLE"), .INITN_PERSISTN("DISABLE"), .JTAG_PERSISTN("DISABLE"), .PROGRAMN_PERSISTN("DISABLE"), .SPIX4_PERSISTN("ENABLE")) config_inst();"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 59
+"PH1_PHY_FIFOCTRL #(.FIFO_AE(14'b00110000000000), .FIFO_AF(14'b11001111100000), .FIFO_ASYNC_RESET_RELEASE("SYNC"), .FIFO_DATA_WIDTH("40"), .FIFO_FIRSTWRITE_RD("DISABLE"), .FIFO_SYNC("SYNC")) fifo_inst_syn_1( .fifo_rclk (clk),  .fifo_re (re),  .fifo_rrst (rrst),  .fifo_wclk (clk),  .fifo_we (we),  .fifo_wrst (wrst),  .fifo_empty (empty_flag),  .fifo_full (full_flag),  .fifo_ore (fifo_inst_syn_34),  .fifo_owe (fifo_inst_syn_33),  .fifo_rdpointer ({open_n147, fifo_rdpointer, open_n148, open_n149, open_n150, open_n151, open_n152}),  .fifo_wrpointer ({open_n153, fifo_wrpointer, open_n154, open_n155, open_n156, open_n157, open_n158}),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_waddr (fifo_inst_syn_3),  .fifoctrl_we (fifo_ ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 105
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSA1("1"), .CSB0("1"), .CSB1("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .FIFOMODE("ENABLE"), .HADDRCAS_A("FIFO"), .HADDRCAS_B("FIFO"), .LADDRCAS_A("FIFO"), .LADDRCAS_B("FIFO"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_2( .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, open_n215, open_n216}),  .csb ({fifo_inst_syn_34, open_n217, open_n218}),  .dia (di[15:0]),  .dia_extra (di[19:16]),  .dib (di[35:20]),  .dib_extra (di[39:36]),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_wad ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 151
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSA1("1"), .CSB0("1"), .CSB1("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .FIFOMODE("ENABLE"), .HADDRCAS_A("FIFO"), .HADDRCAS_B("FIFO"), .LADDRCAS_A("FIFO"), .LADDRCAS_B("FIFO"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_35( .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, open_n313, open_n314}),  .csb ({fifo_inst_syn_34, open_n315, open_n316}),  .dia (di[55:40]),  .dia_extra (di[59:56]),  .dib (di[75:60]),  .dib_extra (di[79:76]),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_w ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 196
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSB0("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .HADDRCAS_A("CASFB"), .HADDRCAS_B("CASFB"), .LADDRCAS_A("CASFB"), .LADDRCAS_B("CASFB"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_36( .addra_casin (fifo_inst_syn_37),  .addrb_casin (fifo_inst_syn_51),  .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, fifo_inst_syn_31, open_n355}),  .csb ({fifo_inst_syn_34, fifo_inst_syn_32, open_n356}),  .dia (di[95:80]),  .dia_extra (di[99:96]),  .dib (di[115:100]),  .dib_extra (di[119:116]),  .addra_casout (fifo_inst_syn_66),  .a ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 239
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSB0("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .HADDRCAS_A("CASFB"), .HADDRCAS_B("CASFB"), .LADDRCAS_A("CASFB"), .LADDRCAS_B("CASFB"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_65( .addra_casin (fifo_inst_syn_66),  .addrb_casin (fifo_inst_syn_80),  .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, fifo_inst_syn_31, open_n425}),  .csb ({fifo_inst_syn_34, fifo_inst_syn_32, open_n426}),  .dia ({open_n427, open_n428, open_n429, open_n430, open_n431, open_n432, open_n433, open_n434, di[127:120]}),  .doa ({open_n525,  ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/ram512x128.v, 69
+"PH1_LOGIC_ERAM #(.DATA_WIDTH_A(DATA_WIDTH_A), .DATA_WIDTH_B(DATA_WIDTH_B), .ADDR_WIDTH_A(ADDR_WIDTH_A), .ADDR_WIDTH_B(ADDR_WIDTH_B), .DATA_DEPTH_A(DATA_DEPTH_A), .DATA_DEPTH_B(DATA_DEPTH_B), .MODE("PDPW"), .REGMODE_A(REGMODE_A), .REGMODE_B(REGMODE_B), .WRITEMODE_A(WRITEMODE_A), .WRITEMODE_B(WRITEMODE_B), .IMPLEMENT("20K(FAST)"), .ECC_ENCODE("DISABLE"), .ECC_DECODE("DISABLE"), .CLKMODE("SYNC"), .SSROVERCE("DISABLE"), .OREGSET_A("SET"), .OREGSET_B("SET"), .RESETMODE_A(RESETMODE_A), .RESETMODE_B(RESETMODE_B), .ASYNC_RESET_RELEASE_A("SYNC"), .ASYNC_RESET_RELEASE_B("SYNC"), .INIT_FILE("NONE"), .FILL_ALL("NONE")) inst( .dia (dia),  .dib ({128 {1'b0}}),  .addra (addra),  .addrb (addrb),  .cea (cea),  .ceb (ceb),  .ocea (1'b0),  .oceb (1'b0),  .clka (clka),  .c ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/ram512x27.v, 69
+"PH1_LOGIC_ERAM #(.DATA_WIDTH_A(DATA_WIDTH_A), .DATA_WIDTH_B(DATA_WIDTH_B), .ADDR_WIDTH_A(ADDR_WIDTH_A), .ADDR_WIDTH_B(ADDR_WIDTH_B), .DATA_DEPTH_A(DATA_DEPTH_A), .DATA_DEPTH_B(DATA_DEPTH_B), .MODE("PDPW"), .REGMODE_A(REGMODE_A), .REGMODE_B(REGMODE_B), .WRITEMODE_A(WRITEMODE_A), .WRITEMODE_B(WRITEMODE_B), .IMPLEMENT("20K(FAST)"), .ECC_ENCODE("DISABLE"), .ECC_DECODE("DISABLE"), .CLKMODE("SYNC"), .SSROVERCE("DISABLE"), .OREGSET_A("SET"), .OREGSET_B("SET"), .RESETMODE_A(RESETMODE_A), .RESETMODE_B(RESETMODE_B), .ASYNC_RESET_RELEASE_A("SYNC"), .ASYNC_RESET_RELEASE_B("SYNC"), .INIT_FILE("NONE"), .FILL_ALL("NONE")) inst( .dia (dia),  .dib ({27 {1'b0}}),  .addra (addra),  .addrb (addrb),  .cea (cea),  .ceb (ceb),  .ocea (1'b0),  .oceb (1'b0),  .clka (clka),  .cl ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 45
+"PH1_PHY_CONFIG #(.DONE_PERSISTN("DISABLE"), .INITN_PERSISTN("DISABLE"), .JTAG_PERSISTN("DISABLE"), .PROGRAMN_PERSISTN("DISABLE"), .SPIX4_PERSISTN("ENABLE")) config_inst();"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 55
+"PH1_PHY_FIFOCTRL #(.FIFO_AE(14'b00110000000000), .FIFO_AF(14'b11001111100000), .FIFO_ASYNC_RESET_RELEASE("SYNC"), .FIFO_DATA_WIDTH("40"), .FIFO_FIRSTWRITE_RD("DISABLE"), .FIFO_SYNC("SYNC")) fifo_inst_syn_1( .fifo_rclk (clk),  .fifo_re (re),  .fifo_rrst (rrst),  .fifo_wclk (clk),  .fifo_we (we),  .fifo_wrst (wrst),  .fifo_empty (empty_flag),  .fifo_full (full_flag),  .fifo_ore (fifo_inst_syn_34),  .fifo_owe (fifo_inst_syn_33),  .fifo_rdpointer ({open_n147, fifo_rdpointer, open_n148, open_n149, open_n150, open_n151, open_n152}),  .fifo_wrpointer ({open_n153, fifo_wrpointer, open_n154, open_n155, open_n156, open_n157, open_n158}),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_waddr (fifo_inst_syn_3),  .fifoctrl_we (fifo_ ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 99
+"PH1_PHY_ERAM #(.CLKMODE("SYNC"), .CSA0("1"), .CSA1("1"), .CSB0("1"), .CSB1("1"), .DATA_WIDTH_A("40"), .DATA_WIDTH_B("40"), .ECC_DECODE("DISABLE"), .ECC_ENCODE("DISABLE"), .FIFOMODE("ENABLE"), .HADDRCAS_A("FIFO"), .HADDRCAS_B("FIFO"), .LADDRCAS_A("FIFO"), .LADDRCAS_B("FIFO"), .MODE("FIFO20K"), .OCEAMUX("1"), .OCEBMUX("1"), .REGMODE_A("NOREG"), .REGMODE_B("NOREG"), .RSTAMUX("0"), .RSTBMUX("0"), .SSROVERCE("DISABLE"), .WEAMUX("1"), .WEBMUX("0")) fifo_inst_syn_2( .clka (clk),  .clkb (clk),  .csa ({fifo_inst_syn_33, open_n215, open_n216}),  .csb ({fifo_inst_syn_34, open_n217, open_n218}),  .dia (di),  .fifoctrl_raddr (fifo_inst_syn_17),  .fifoctrl_re (fifo_inst_syn_32),  .fifoctrl_waddr (fifo_inst_syn_3),  .fifoctrl_we (fifo_inst_syn_31),  .doa (dout));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_ip/src/sgdma_subsys.v, 448
+"pcie_ep_core u_ep_core( .refclk_p (refclk_p),  .refclk_n (refclk_n),  .txp (txp),  .txn (txn),  .rxp (rxp),  .rxn (rxn),  .client0_tlp_data (client0_tlp_data),  .client0_tlp_addr (client0_tlp_addr),  .client0_remote_req_id (client0_remote_req_id),  .client0_tlp_byte_en (client0_tlp_byte_en),  .client0_cpl_byte_cnt (client0_cpl_byte_cnt),  .client0_addr_align_en (client0_addr_align_en),  .client0_tlp_tc (client0_tlp_tc),  .client0_tlp_attr (client0_tlp_attr),  .client0_cpl_status (client0_cpl_status),  .client0_cpl_bcm (client0_cpl_bcm),  .client0_tlp_dv (client0_tlp_dv),  .client0_tlp_eot (client0_tlp_eot),  .client0_tlp_bad_eot (client0_tlp_bad_eot),  .client0_tlp_hv (client0_tlp_hv),  .client0_tlp_type (client0_tlp_type),  .client0_tlp_fmt (client0_tl ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+../../src/sgdma_app/ip/ram512x32.v, 69
+"PH1_LOGIC_ERAM #(.DATA_WIDTH_A(DATA_WIDTH_A), .DATA_WIDTH_B(DATA_WIDTH_B), .ADDR_WIDTH_A(ADDR_WIDTH_A), .ADDR_WIDTH_B(ADDR_WIDTH_B), .DATA_DEPTH_A(DATA_DEPTH_A), .DATA_DEPTH_B(DATA_DEPTH_B), .MODE("PDPW"), .REGMODE_A(REGMODE_A), .REGMODE_B(REGMODE_B), .WRITEMODE_A(WRITEMODE_A), .WRITEMODE_B(WRITEMODE_B), .IMPLEMENT("20K(FAST)"), .ECC_ENCODE("DISABLE"), .ECC_DECODE("DISABLE"), .CLKMODE("SYNC"), .SSROVERCE("DISABLE"), .OREGSET_A("SET"), .OREGSET_B("SET"), .RESETMODE_A(RESETMODE_A), .RESETMODE_B(RESETMODE_B), .ASYNC_RESET_RELEASE_A("SYNC"), .ASYNC_RESET_RELEASE_B("SYNC"), .INIT_FILE("NONE"), .FILL_ALL("NONE")) inst( .dia (dia),  .dib ({32 {1'b0}}),  .addra (addra),  .addrb (addrb),  .cea (cea),  .ceb (ceb),  .ocea (1'b0),  .oceb (1'b0),  .clka (clka),  .cl ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 99
+  Implicit wire 'open_n269' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 99
+  Implicit wire 'open_n270' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 100
+  Implicit wire 'open_n271' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 100
+  Implicit wire 'open_n272' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 103
+  Implicit wire 'open_n273' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 103
+  Implicit wire 'open_n274' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 103
+  Implicit wire 'open_n275' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../ip/sfifo512x32_sim.v, 103
+  Implicit wire 'open_n276' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../bfm/sgdma_rc_exam.v, 724
+"pcie_tx_bfm u_tx_bfm( .core_rst_n ((core_rst_n_c & h2c_rstn)),  .core_clk (core_clk_c),  .h2c_fm_idt (h2c_fm_idt),  .wdscp_idt (wdscp_idt),  .rdscp_idt (rdscp_idt),  .trgtlookup_id_i (trgtlookup_id),  .trgtlookup_id_rden_o (trgtlookup_id_rden),  .mrd_rden_o (mrd_rden),  .mrd_q_i (mrd_q),  .mrd_rdempty_i (mrd_rdempty),  .client0_addr_align_en_o (client1_addr_align_en),  .client0_tlp_byte_en_o (client1_tlp_byte_en),  .client0_header_data_o ({client1_remote_req_id, client1_tlp_tid[7:0], r10, client1_tlp_addr[6:0], completer1_id, client1_cpl_status, client1_cpl_bcm, client1_cpl_byte_cnt, r11, client1_tlp_fmt, client1_tlp_type, t19, client1_tlp_tc, t18, client1_tlp_attr[2], r12, client1_tlp_td, client1_tlp_ep, client1_tlp_attr[1:0], r13, dw1_len}),  .client0 ... "
+  The following 96-bit expression is connected to 128-bit port 
+  "client0_header_data_o" of module "pcie_tx_bfm", instance "u_tx_bfm".
+  Expression: {client1_remote_req_id, client1_tlp_tid[7:0], r10, 
+  client1_tlp_addr[6:0], completer1_id, client1_cpl_status, client1_cpl_bcm, 
+  client1_cpl_byte_cnt,  ...
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../bfm/sgdma_rc_exam.v, 869
+"msi_int_bfm u_int_bfm( .core_clk (core_clk_c),  .core_rst_n ((core_rst_n_c & h2c_rstn)),  .radm_trgt1_dv (radm_trgt1_dv),  .radm_trgt1_hv (radm_trgt1_hv),  .radm_trgt1_eot (radm_trgt1_eot),  .radm_trgt1_tlp_abort (radm_trgt1_tlp_abort),  .radm_trgt1_dllp_abort (radm_trgt1_dllp_abort),  .radm_trgt1_ecrc_err (radm_trgt1_ecrc_err),  .radm_trgt1_dwen (radm_trgt1_dwen),  .radm_trgt1_fmt (radm_trgt1_fmt),  .radm_trgt1_attr (radm_trgt1_attr),  .radm_trgt1_func_num (radm_trgt1_func_num),  .radm_trgt1_type (radm_trgt1_type),  .radm_trgt1_tc (radm_trgt1_tc),  .radm_trgt1_reqid (radm_trgt1_reqid),  .radm_trgt1_data (radm_trgt1_data),  .radm_trgt1_first_be (radm_trgt1_first_be),  .radm_trgt1_last_be (radm_trgt1_last_be),  .radm_trgt1_addr (radm_trgt1_addr),  .radm_ ... "
+  The following 4-bit expression is connected to 2-bit port "radm_trgt1_dwen" 
+  of module "msi_int_bfm", instance "u_int_bfm".
+  Expression: radm_trgt1_dwen
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../bfm/sgdma_rc_exam.v, 869
+"msi_int_bfm u_int_bfm( .core_clk (core_clk_c),  .core_rst_n ((core_rst_n_c & h2c_rstn)),  .radm_trgt1_dv (radm_trgt1_dv),  .radm_trgt1_hv (radm_trgt1_hv),  .radm_trgt1_eot (radm_trgt1_eot),  .radm_trgt1_tlp_abort (radm_trgt1_tlp_abort),  .radm_trgt1_dllp_abort (radm_trgt1_dllp_abort),  .radm_trgt1_ecrc_err (radm_trgt1_ecrc_err),  .radm_trgt1_dwen (radm_trgt1_dwen),  .radm_trgt1_fmt (radm_trgt1_fmt),  .radm_trgt1_attr (radm_trgt1_attr),  .radm_trgt1_func_num (radm_trgt1_func_num),  .radm_trgt1_type (radm_trgt1_type),  .radm_trgt1_tc (radm_trgt1_tc),  .radm_trgt1_reqid (radm_trgt1_reqid),  .radm_trgt1_data (radm_trgt1_data),  .radm_trgt1_first_be (radm_trgt1_first_be),  .radm_trgt1_last_be (radm_trgt1_last_be),  .radm_trgt1_addr (radm_trgt1_addr),  .radm_ ... "
+  The following 128-bit expression is connected to 64-bit port 
+  "radm_trgt1_data" of module "msi_int_bfm", instance "u_int_bfm".
+  Expression: radm_trgt1_data
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../ip/pcie_rc_core.v, 744
+"PH1_PHY_PCIE_V2 #(1'b0, 2'b0, 4'b0, "RC", 3'b0, "DISABLE", "DISABLE", "DISABLE", "DISABLE", 1'b1, 1'b1, 1'b1, 1'b1, 2'b0, "DISABLE", 2'b0, "DISABLE", "DISABLE", 16'b1010000001000101, "DISABLE", 7'b0, "ENABLE", "DISABLE", "DISABLE", 11'b0, 8'b00011001, "DISABLE", 12'b000000100101, 8'b01100110, "DISABLE", 2'b1, 16'b1010000000110110, "DISABLE", 7'b0, "DISABLE", "ENABLE", 11'b0, 8'b01010000, "DISABLE", 12'b000001100000, 8'b01010001, "DISABLE", 2'b0, "DISABLE", "DISABLE", "ENABLE", 3'b011, 8'b0, 8'b0, 8'b01010101, 8'b0, 4'b0, 4'b0, 4'b0, 4'b1111, 20'b10010100101001010010, 20'b10010100101001010010, 20'b10010100101001010010, 20'b10010100101001010010, 8'b01010101, 8'b01010101, 8'b01010101, 8'b10101010, 4'b1111, 4'b1111, 4'b1111, 4'b0, 4'b1111, 4'b1111, 4'b1111, ... "
+  The following 4-bit expression is connected to 2-bit port 
+  "app_pf_req_retry_en" of module "PH1_PHY_PCIE_V2", instance 
+  "uep_PH1_PHY_PCIE".
+  Expression: 4'b0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../bfm/tlp_access_rc.v, 1589
+"byps_cpl u_byps_cpl( .core_clk (core_clk),  .core_rst_n (core_rst_n),  .rc_bdf (rc_bdf),  .ep_bdf (ep_bdf),  .radm_bypass_data (radm_bypass_data),  .radm_bypass_dwen (radm_bypass_dwen),  .radm_bypass_dv (radm_bypass_dv),  .radm_bypass_hv (radm_bypass_hv),  .radm_bypass_eot (radm_bypass_eot),  .radm_bypass_dllp_abort (radm_bypass_dllp_abort),  .radm_bypass_tlp_abort (radm_bypass_tlp_abort),  .radm_bypass_ecrc_err (radm_bypass_ecrc_err),  .radm_bypass_addr (radm_bypass_addr),  .radm_bypass_fmt (radm_bypass_fmt),  .radm_bypass_tc (radm_bypass_tc),  .radm_bypass_attr (radm_bypass_attr),  .radm_bypass_reqid (radm_bypass_reqid),  .radm_bypass_type (radm_bypass_type),  .radm_bypass_tag (radm_bypass_tag),  .radm_bypass_func_num (radm_bypass_func_num),  .radm_by ... "
+  The following 128-bit expression is connected to 129-bit port 
+  "radm_bypass_data" of module "byps_cpl", instance "u_byps_cpl".
+  Expression: radm_bypass_data
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../bfm/tlp_access_rc.v, 1589
+"byps_cpl u_byps_cpl( .core_clk (core_clk),  .core_rst_n (core_rst_n),  .rc_bdf (rc_bdf),  .ep_bdf (ep_bdf),  .radm_bypass_data (radm_bypass_data),  .radm_bypass_dwen (radm_bypass_dwen),  .radm_bypass_dv (radm_bypass_dv),  .radm_bypass_hv (radm_bypass_hv),  .radm_bypass_eot (radm_bypass_eot),  .radm_bypass_dllp_abort (radm_bypass_dllp_abort),  .radm_bypass_tlp_abort (radm_bypass_tlp_abort),  .radm_bypass_ecrc_err (radm_bypass_ecrc_err),  .radm_bypass_addr (radm_bypass_addr),  .radm_bypass_fmt (radm_bypass_fmt),  .radm_bypass_tc (radm_bypass_tc),  .radm_bypass_attr (radm_bypass_attr),  .radm_bypass_reqid (radm_bypass_reqid),  .radm_bypass_type (radm_bypass_type),  .radm_bypass_tag (radm_bypass_tag),  .radm_bypass_func_num (radm_bypass_func_num),  .radm_by ... "
+  The following 128-bit expression is connected to 129-bit port "cpld_data" of
+  module "byps_cpl", instance "u_byps_cpl".
+  Expression: cpld_data
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../bfm/tlp_access_rc.v, 1589
+"byps_cpl u_byps_cpl( .core_clk (core_clk),  .core_rst_n (core_rst_n),  .rc_bdf (rc_bdf),  .ep_bdf (ep_bdf),  .radm_bypass_data (radm_bypass_data),  .radm_bypass_dwen (radm_bypass_dwen),  .radm_bypass_dv (radm_bypass_dv),  .radm_bypass_hv (radm_bypass_hv),  .radm_bypass_eot (radm_bypass_eot),  .radm_bypass_dllp_abort (radm_bypass_dllp_abort),  .radm_bypass_tlp_abort (radm_bypass_tlp_abort),  .radm_bypass_ecrc_err (radm_bypass_ecrc_err),  .radm_bypass_addr (radm_bypass_addr),  .radm_bypass_fmt (radm_bypass_fmt),  .radm_bypass_tc (radm_bypass_tc),  .radm_bypass_attr (radm_bypass_attr),  .radm_bypass_reqid (radm_bypass_reqid),  .radm_bypass_type (radm_bypass_type),  .radm_bypass_tag (radm_bypass_tag),  .radm_bypass_func_num (radm_bypass_func_num),  .radm_by ... "
+  The following 4-bit expression is connected to 2-bit port "cpld_data_vld" of
+  module "byps_cpl", instance "u_byps_cpl".
+  Expression: cpld_data_vld
+  	use +lint=PCWM for more details
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 102
+  Implicit wire 'open_n215' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 102
+  Implicit wire 'open_n216' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 103
+  Implicit wire 'open_n217' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x16_sim.v, 103
+  Implicit wire 'open_n218' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 108
+  Implicit wire 'open_n215' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 108
+  Implicit wire 'open_n216' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 109
+  Implicit wire 'open_n217' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 109
+  Implicit wire 'open_n218' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 154
+  Implicit wire 'open_n313' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 154
+  Implicit wire 'open_n314' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 155
+  Implicit wire 'open_n315' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 155
+  Implicit wire 'open_n316' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 201
+  Implicit wire 'open_n355' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 202
+  Implicit wire 'open_n356' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 244
+  Implicit wire 'open_n425' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 245
+  Implicit wire 'open_n426' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n427' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n428' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n429' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n430' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n431' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n432' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n433' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 246
+  Implicit wire 'open_n434' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 104
+  Implicit wire 'open_n215' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 104
+  Implicit wire 'open_n216' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 105
+  Implicit wire 'open_n217' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 105
+  Implicit wire 'open_n218' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 150
+  Implicit wire 'open_n313' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 150
+  Implicit wire 'open_n314' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 151
+  Implicit wire 'open_n315' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 151
+  Implicit wire 'open_n316' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n317' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n318' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n319' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n320' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n321' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n322' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n323' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n324' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n325' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n326' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n327' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+../../src/sgdma_ip/ip/sfifo512x64_sim.v, 154
+  Implicit wire 'open_n328' does not have any driver, please make sure this is
+  intended.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../../src/sgdma_ip/src/sgdma_subsys.v, 448
+"pcie_ep_core u_ep_core( .refclk_p (refclk_p),  .refclk_n (refclk_n),  .txp (txp),  .txn (txn),  .rxp (rxp),  .rxn (rxn),  .client0_tlp_data (client0_tlp_data),  .client0_tlp_addr (client0_tlp_addr),  .client0_remote_req_id (client0_remote_req_id),  .client0_tlp_byte_en (client0_tlp_byte_en),  .client0_cpl_byte_cnt (client0_cpl_byte_cnt),  .client0_addr_align_en (client0_addr_align_en),  .client0_tlp_tc (client0_tlp_tc),  .client0_tlp_attr (client0_tlp_attr),  .client0_cpl_status (client0_cpl_status),  .client0_cpl_bcm (client0_cpl_bcm),  .client0_tlp_dv (client0_tlp_dv),  .client0_tlp_eot (client0_tlp_eot),  .client0_tlp_bad_eot (client0_tlp_bad_eot),  .client0_tlp_hv (client0_tlp_hv),  .client0_tlp_type (client0_tlp_type),  .client0_tlp_fmt (client0_tl ... "
+  The following 2-bit expression is connected to 4-bit port "radm_bypass_dwen"
+  of module "pcie_ep_core", instance "u_ep_core".
+  Expression: radm_bypass_dwen
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../top/tb_sgdma_fsim.v, 126
+"sgdma_rc_exam u_rc_exam( .app_auxclk (app_auxclk),  .app_button_rst_n (app_button_rst_n),  .refclk_p (refclk_p),  .refclk_n (refclk_n),  .txp (txp),  .txn (txn),  .rxp (rxp),  .rxn (rxn),  .core_clk_c (rc_core_clk),  .core_rst_n_c (rc_core_rstn),  .op_start (op_start),  .mw_en (mw_en),  .mr_en (mr_en),  .mw_addr (mw_addr),  .mw_len (mw_len),  .mw_data (mw_data),  .mw_data_be (mw_data_be),  .mw_data_en (mw_data_en),  .mr_addr (mr_addr),  .mr_len (mr_len),  .mr_data_be (mr_data_be),  .mr_data (mr_data),  .mr_data_vld (mr_data_vld),  .mw_op_over (mw_op_over),  .mr_op_over (mr_op_over),  .iow_en (1'b0),  .ior_en (1'b0),  .iow_addr (32'b0),  .iow_data (32'b0),  .ior_addr (32'b0),  .cfg0w_en (cfg0w_en),  .cfg0r_en (cfg0r_en),  .cfg0w_addr (cfg0w_addr),  .cfg0 ... "
+  The following 128-bit expression is connected to 64-bit port "mw_addr" of 
+  module "sgdma_rc_exam", instance "u_rc_exam".
+  Expression: mw_addr
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+../top/tb_sgdma_fsim.v, 126
+"sgdma_rc_exam u_rc_exam( .app_auxclk (app_auxclk),  .app_button_rst_n (app_button_rst_n),  .refclk_p (refclk_p),  .refclk_n (refclk_n),  .txp (txp),  .txn (txn),  .rxp (rxp),  .rxn (rxn),  .core_clk_c (rc_core_clk),  .core_rst_n_c (rc_core_rstn),  .op_start (op_start),  .mw_en (mw_en),  .mr_en (mr_en),  .mw_addr (mw_addr),  .mw_len (mw_len),  .mw_data (mw_data),  .mw_data_be (mw_data_be),  .mw_data_en (mw_data_en),  .mr_addr (mr_addr),  .mr_len (mr_len),  .mr_data_be (mr_data_be),  .mr_data (mr_data),  .mr_data_vld (mr_data_vld),  .mw_op_over (mw_op_over),  .mr_op_over (mr_op_over),  .iow_en (1'b0),  .ior_en (1'b0),  .iow_addr (32'b0),  .iow_data (32'b0),  .ior_addr (32'b0),  .cfg0w_en (cfg0w_en),  .cfg0r_en (cfg0r_en),  .cfg0w_addr (cfg0w_addr),  .cfg0 ... "
+  The following 128-bit expression is connected to 64-bit port "mr_addr" of 
+  module "sgdma_rc_exam", instance "u_rc_exam".
+  Expression: mr_addr
+  	use +lint=PCWM for more details
+
+
+Warning-[SIOB] Select index out of bounds
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_dram.v, 219
+"INIT_FILE[(INIT_STR_LEN - 1):INIT_VALUE_SRART]"
+  The select index is out of declared bounds : [31:0].
+  In module instance : dram 
+  In module : PH1_LOGIC_DRAM.
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v, 181
+"PH1_LOGIC_ERAM #(DATA_WIDTH, , ADDR_WIDTH, , , , , , , "PDPW", , , , , , , , , , , , , , , , , , , , IMPLEMENT, , , , , , , , , , , , , , , , ) u5( .dia (di),  .addra (write_addr),  .cea (1'b1),  .bea (0),  .ocea (1'b1),  .clka (clk),  .wea (valid_wrreq),  .rsta (rst),  .dib (0),  .addrb (ram_read_addr),  .ceb (ram_read_req),  .beb (0),  .oceb (1'b1),  .clkb (clk),  .web (1'b0),  .rstb (rst),  .dob (ram_q));"
+  The following 32-bit expression is connected to 1-bit port "bea" of module 
+  "PH1_LOGIC_ERAM", instance "u5".
+  Expression: 0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v, 181
+"PH1_LOGIC_ERAM #(DATA_WIDTH, , ADDR_WIDTH, , , , , , , "PDPW", , , , , , , , , , , , , , , , , , , , IMPLEMENT, , , , , , , , , , , , , , , , ) u5( .dia (di),  .addra (write_addr),  .cea (1'b1),  .bea (0),  .ocea (1'b1),  .clka (clk),  .wea (valid_wrreq),  .rsta (rst),  .dib (0),  .addrb (ram_read_addr),  .ceb (ram_read_req),  .beb (0),  .oceb (1'b1),  .clkb (clk),  .web (1'b0),  .rstb (rst),  .dob (ram_q));"
+  The following 32-bit expression is connected to 128-bit port "dib" of module
+  "PH1_LOGIC_ERAM", instance "u5".
+  Expression: 0
+  	use +lint=PCWM for more details
+
+
+Warning-[PCWM-W] Port connection width mismatch
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v, 181
+"PH1_LOGIC_ERAM #(DATA_WIDTH, , ADDR_WIDTH, , , , , , , "PDPW", , , , , , , , , , , , , , , , , , , , IMPLEMENT, , , , , , , , , , , , , , , , ) u5( .dia (di),  .addra (write_addr),  .cea (1'b1),  .bea (0),  .ocea (1'b1),  .clka (clk),  .wea (valid_wrreq),  .rsta (rst),  .dib (0),  .addrb (ram_read_addr),  .ceb (ram_read_req),  .beb (0),  .oceb (1'b1),  .clkb (clk),  .web (1'b0),  .rstb (rst),  .dob (ram_q));"
+  The following 32-bit expression is connected to 1-bit port "beb" of module 
+  "PH1_LOGIC_ERAM", instance "u5".
+  Expression: 0
+  	use +lint=PCWM for more details
+
+
+Warning-[SIOB] Select index out of bounds
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Warning-[SIOB] Select index out of bounds
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Warning-[SIOB] Select index out of bounds
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Warning-[SIOB] Select index out of bounds
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Warning-[SIOB] Select index out of bounds
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Warning-[DRTZ] Detect delay value roundoff to 0
+  Delay from design or SDF file roundoff to 0 based on timescale
+  Please use switch -diag timescale to dump detailed information.
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+../../src/sgdma_ip/src/sgdma_ip_all.enc.v, 246
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+../../src/sgdma_ip/ip/sfifo512x128_sim.v, 8
+"di"
+  Port "di" declared as input in module "sfifo512x128" may need to be inout. 
+  Coercing to inout.
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 62
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 63
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 70
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 71
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 62
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 63
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 70
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_eram.v, 71
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+../../src/sgdma_ip/ip/safifo512x128.v, 15
+"rst"
+  Port "rst" declared as input in module "safifo512x128" may need to be inout.
+  Coercing to inout.
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_ramfifo.v, 26
+"rst"
+  Port "rst" declared as input in module "PH1_LOGIC_RAMFIFO" may need to be 
+  inout. Coercing to inout.
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_logic_eram.v, 564
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+Starting vcs inline pass...
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Warning-[KDB-ELAB-W] Verdi KDB elaboration with warning
+  Verdi KDB elaboration finished with 0 error(s) and 231 warning(s).
+  Please look at this Verdi elaboration log file for details. 
+  /users/zhangchun/work/PCIe_SGDMA_400k/sgdma_prj/tb/sim/simv.daidir/elabcomLog/compiler.log
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTI-L] Ports coerced to input
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+
+Lint-[PCTIO-L] Ports coerced to inout
+/software1/yywang/td_rel/TD_5.6.2_69102/sim_release/ph1/ph1_phy_pcie_v2.sv, 1984
+
+
+1520 modules and 4 UDPs read.
+Generating code for _VCSgd_saEJf
+Generating code for _VCSgd_reYIK
+Generating code for _VCSgd_LcDGb
+recompiling module <protected>
+Generating code for _VCSgd_s2dZW
+Generating code for _VCSgd_vtfgz
+Generating code for _VCSgd_uTgKz
+Generating code for _VCSgd_ZH47E
+Generating code for _VCSgd_LFSHc
+Generating code for _VCSgd_MbbDJ
+Generating code for _VCSgd_i9Gir
+Generating code for _VCSgd_u0uMR
+Generating code for _VCSgd_j7xuu
+Generating code for _VCSgd_vGEY4
+Generating code for _VCSgd_S88yr
+Generating code for _VCSgd_Bn0nc
+Generating code for _VCSgd_I5REr
+Generating code for _VCSgd_IKs8Y
+Generating code for _VCSgd_I6wKs
+recompiling module sgdma_app
+Generating code for _VCSgd_rPBCf
+Generating code for _VCSgd_hVQL6
+Generating code for _VCSgd_kdHJ5
+Generating code for _VCSgd_bIazk
+Generating code for _VCSgd_Q8jTn
+Generating code for _VCSgd_YBdL0
+Generating code for _VCSgd_HUzRk
+Generating code for _VCSgd_f2j4J
+Generating code for _VCSgd_qU1R7
+Generating code for _VCSgd_rJq5A
+Generating code for _VCSgd_KPHBt
+Generating code for _VCSgd_nWvQd
+Both modules done.
+	However, due to incremental compilation, only 2 modules need to be compiled. 
+make[1]: Entering directory `/users/zhangchun/work/PCIe_SGDMA_400k/sgdma_prj/tb/sim/csrc' \
+
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -o .//../simv.daidir//_csrc0.so objs/a/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ -Wl,-rpath=./simv.daidir/ \
+-Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic  -Wl,-rpath=/exportEDA/SYNOPSYS/vcs/N-2017.12-SP2-5/linux64/lib \
+-L/exportEDA/SYNOPSYS/vcs/N-2017.12-SP2-5/linux64/lib     _83531_archive_1.so _prev_archive_1.so \
+_csrc0.so objs/udps/YINK2.o objs/udps/PxnGz.o objs/udps/A0Huc.o objs/udps/hPrMS.o \
+SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lvirsim -lerrorinf -lsnpsmalloc -lvfs \
+/exportEDA/SYNOPSYS/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/pli.a    -lvcsnew \
+-lsimprofile -luclinative /exportEDA/SYNOPSYS/vcs/N-2017.12-SP2-5/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /exportEDA/SYNOPSYS/vcs/N-2017.12-SP2-5/linux64/lib/vcs_save_restore_new.o \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/users/zhangchun/work/PCIe_SGDMA_400k/sgdma_prj/tb/sim/csrc' \
+
+Command: /users/zhangchun/work/PCIe_SGDMA_400k/sgdma_prj/tb/sim/./simv +v2k -lca +vc +notimingcheck +nospecy +LDFLAGS +define+RTL_SIM+CASE41+FSDB_ON+DEBUG_MODE -a vcs_com.log +define+SIM_FSDB +fsdb +autoflush -a vcs_sim.log
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-5_Full64; Runtime version N-2017.12-SP2-5_Full64;  Apr 21 15:48 2023
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Debug: PCIe dbi configuration start at time:                   0
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: *** al6010pcieUFyDRElu tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED module is al6010pcie8kIN82ag the <al6010pcieAfqMDIyM al6010pcieJvHX5a1e al6010pcielMujdzKT al6010pcieZivR3J_P (2)> al6010pcie5JOPvOs6 al6010pcie1FrQ4jFn al6010pciewdYJKSSg al6010pcieJvHXvnnn ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+Information: tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED: *** al6010pcie87V6cCAt with al6010pciezxoPmtyC al6010pcieublhokHE, al6010pcieXh8srpj5 is: 1 ***
+incase
+
+incase
+
+*Verdi* Loading libsscore_vcs201712.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* : Create FSDB file './case41/tb_sgdma_fsim.fsdb'
+*Verdi* : Begin traversing the scope (tb_sgdma_fsim), layer (0).
+*Verdi* : End of traversing.
+                3810 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 0021 with 0018 al6010pcie8wz9bXgM
+                3810 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 0021 with 0018 al6010pcie8wz9bXgM
+                3990 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 002e with 0018 al6010pcie8wz9bXgM
+                3990 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 002e with 0018 al6010pcie8wz9bXgM
+                4170 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1061 with 0089 al6010pcie8wz9bXgM
+                4170 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1061 with 0089 al6010pcie8wz9bXgM
+                4350 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1161 with 0089 al6010pcie8wz9bXgM
+                4350 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1161 with 0089 al6010pcie8wz9bXgM
+                4530 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1045 with 0268 al6010pcie8wz9bXgM
+                4530 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1045 with 0268 al6010pcie8wz9bXgM
+                4710 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1145 with 0268 al6010pcie8wz9bXgM
+                4710 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1145 with 0268 al6010pcie8wz9bXgM
+                4890 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1027 with 0d72 al6010pcie8wz9bXgM
+                4890 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1027 with 0d72 al6010pcie8wz9bXgM
+                5070 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1127 with 0d72 al6010pcie8wz9bXgM
+                5070 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 1127 with 0d72 al6010pcie8wz9bXgM
+                5250 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 3051 with 7fff al6010pcie8wz9bXgM
+                5250 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 3051 with 7fff al6010pcie8wz9bXgM
+                5430 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 3151 with 7fff al6010pcie8wz9bXgM
+                5430 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 3151 with 7fff al6010pcie8wz9bXgM
+                5610 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 30fc with 0007 al6010pcie8wz9bXgM
+                5610 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 30fc with 0007 al6010pcie8wz9bXgM
+                5790 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 31fc with 0007 al6010pcie8wz9bXgM
+                5790 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 31fc with 0007 al6010pcie8wz9bXgM
+                5970 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 306a with 03ff al6010pcie8wz9bXgM
+                5970 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 306a with 03ff al6010pcie8wz9bXgM
+                6150 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 316a with 03ff al6010pcie8wz9bXgM
+                6150 <tb_sgdma_fsim.u_rc_exam.u_rc_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED.al6010pcieUHMyHXLC> al6010pcieJNDrKM9C al6010pcied5zsHHEV al6010pciePgmlkiyg al6010pcieRiLA4YNO al6010pcieCGuWSRlp: 316a with 03ff al6010pcie8wz9bXgM
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff49] Success at time            773010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff49] Success at time            773010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff49] Success at time            787010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff49] Success at time            787010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000000], Data:[32'habcd1edb] Success at time            801010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000000], Data:[32'habcd1edb] Success at time            801010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000008], Data:[32'h06000000] Success at time            815010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000008], Data:[32'h00000000] Success at time            815010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000000c], Data:[32'h00000000] Success at time            829010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000000c], Data:[32'h00000000] Success at time            829010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000010], Data:[32'h00000000] Success at time            843010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000010], Data:[32'h00000000] Success at time            843010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000018], Data:[32'h00000000] Success at time            857010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000018], Data:[32'h00000000] Success at time            857010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000020], Data:[32'h00000000] Success at time            871010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000020], Data:[32'h00000000] Success at time            871010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000002c], Data:[32'h00000000] Success at time            885010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000002c], Data:[32'h00000000] Success at time            885010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000003c], Data:[32'h00000000] Success at time            899010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000003c], Data:[32'h000000ff] Success at time            899010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000040], Data:[32'h83d37001] Success at time            913010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000040], Data:[32'h83d35001] Success at time            913010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000050], Data:[32'h01040000] Success at time            927010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000050], Data:[32'h01047005] Success at time            927010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000070], Data:[32'h00000000] Success at time            941010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000070], Data:[32'h00020010] Success at time            941010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000074], Data:[32'h00008024] Success at time            955010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000074], Data:[32'h00008fe4] Success at time            955010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000007c], Data:[32'h00736042] Success at time            969010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000007c], Data:[32'h00436042] Success at time            969010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000080], Data:[32'h00110000] Success at time            983010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000080], Data:[32'h00110000] Success at time            983010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000a0], Data:[32'h02010002] Success at time            997010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000a0], Data:[32'h01010002] Success at time            997010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b0], Data:[32'h00000000] Success at time           1011010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b0], Data:[32'h00000011] Success at time           1011010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b4], Data:[32'h00000000] Success at time           1025010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b4], Data:[32'h00000000] Success at time           1025010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b8], Data:[32'h00000000] Success at time           1039010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b8], Data:[32'h00000000] Success at time           1039010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000100], Data:[32'h2c420001] Success at time           1053010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000100], Data:[32'h2c420001] Success at time           1053010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000118], Data:[32'h00000000] Success at time           1067010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000118], Data:[32'h00000000] Success at time           1067010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001d0], Data:[32'h00000000] Success at time           1081010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001d0], Data:[32'h00000000] Success at time           1081010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001d8], Data:[32'h00010002] Success at time           1095010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001d8], Data:[32'h00010002] Success at time           1095010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001dc], Data:[32'h00000000] Success at time           1109010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001dc], Data:[32'h00000000] Success at time           1109010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001e8], Data:[32'h00000004] Success at time           1123010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001e8], Data:[32'h00000004] Success at time           1123010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f0], Data:[32'h00000000] Success at time           1137010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f0], Data:[32'h00000000] Success at time           1137010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f8], Data:[32'h00000000] Success at time           1151010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f8], Data:[32'h00000000] Success at time           1151010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000002c4], Data:[32'h42000000] Success at time           1165010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000002c4], Data:[32'h4201001e] Success at time           1165010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000710], Data:[32'h00071020] Success at time           1179010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000710], Data:[32'h00071020] Success at time           1179010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000081c], Data:[32'h0001ffff] Success at time           1193010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h0000081c], Data:[32'h00001ffe] Success at time           1193010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008c0], Data:[32'h000000c4] Success at time           1207010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008c0], Data:[32'h000000c4] Success at time           1207010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000010], Data:[32'h000fffff] Success at time           1221010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000010], Data:[32'h000fffff] Success at time           1221010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000018], Data:[32'h0000007e] Success at time           1235010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000018], Data:[32'h0000007e] Success at time           1235010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000020], Data:[32'h0000007e] Success at time           1249010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000020], Data:[32'h0000007e] Success at time           1249010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000030], Data:[32'h000007fe] Success at time           1263010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000030], Data:[32'h000007fe] Success at time           1263010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b0], Data:[32'h00000000] Success at time           1277010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b0], Data:[32'h00000000] Success at time           1277010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b4], Data:[32'h00000000] Success at time           1291010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b4], Data:[32'h00000000] Success at time           1291010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b8], Data:[32'h00000000] Success at time           1305010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000000b8], Data:[32'h00000000] Success at time           1305010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001e8], Data:[32'h0000007f] Success at time           1319010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001e8], Data:[32'h0000007f] Success at time           1319010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001ec], Data:[32'h00000000] Success at time           1333010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001ec], Data:[32'h00000000] Success at time           1333010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f0], Data:[32'h0000007e] Success at time           1347010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f0], Data:[32'h0000007e] Success at time           1347010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f8], Data:[32'h0000007e] Success at time           1361010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000001f8], Data:[32'h0000007e] Success at time           1361010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff48] Success at time           1375010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000070], Data:[32'h00020010] Success at time           1375010000. 
+Info. RC  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff48] Success at time           1389010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000074], Data:[32'h00008fe4] Success at time           1389010000. 
+Info.	PCIe RC CFG DBI al6010pcieGOlbHyhb(         43) al6010pcieLt3iuuJD
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h00000080], Data:[32'h00000000] Success at time           1403010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000000], Data:[32'habcd1edb] Success at time           1417010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000008], Data:[32'h00000000] Success at time           1431010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000010], Data:[32'h00000004] Success at time           1445010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000018], Data:[32'h00000000] Success at time           1459010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000020], Data:[32'h00000000] Success at time           1473010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h0000002c], Data:[32'h00000000] Success at time           1487010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h0000003c], Data:[32'h000000ff] Success at time           1501010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000040], Data:[32'h83d37001] Success at time           1515010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000050], Data:[32'h01047005] Success at time           1529010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000070], Data:[32'h00020010] Success at time           1543010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000074], Data:[32'h00008fe4] Success at time           1557010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h0000007c], Data:[32'h00436042] Success at time           1571010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000080], Data:[32'h00110000] Success at time           1585010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000a0], Data:[32'h01010002] Success at time           1599010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000b0], Data:[32'h00000011] Success at time           1613010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000b4], Data:[32'h00000000] Success at time           1627010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000b8], Data:[32'h00000000] Success at time           1641010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000100], Data:[32'h00020001] Success at time           1655010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000118], Data:[32'h00000000] Success at time           1669010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001d0], Data:[32'h00000000] Success at time           1683010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001d8], Data:[32'h00010003] Success at time           1697010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001dc], Data:[32'h00000000] Success at time           1711010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001e8], Data:[32'h00000004] Success at time           1725010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001f0], Data:[32'h00000000] Success at time           1739010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001f8], Data:[32'h00000000] Success at time           1753010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000010], Data:[32'h0000007f] Success at time           1767010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000014], Data:[32'h00000000] Success at time           1781010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000018], Data:[32'h0000007e] Success at time           1795010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000020], Data:[32'h0000007e] Success at time           1809010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000030], Data:[32'h000007fe] Success at time           1823010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000b0], Data:[32'h00000000] Success at time           1837010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000b4], Data:[32'h00000000] Success at time           1851010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000000b8], Data:[32'h00000000] Success at time           1865010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001e8], Data:[32'h0000007f] Success at time           1879010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001ec], Data:[32'h00000000] Success at time           1893010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001f0], Data:[32'h0000007e] Success at time           1907010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h000001f8], Data:[32'h0000007e] Success at time           1921010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000070], Data:[32'h00020010] Success at time           1935010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000074], Data:[32'h00008fe4] Success at time           1949010000. 
+Info. EP  DBI	CFG PF: 1 VF: 0 Write Addr:[32'h00000080], Data:[32'h00000000] Success at time           1963010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff48] Success at time           1977010000. 
+Info. EP  DBI	CFG PF: 0 VF: 0 Write Addr:[32'h000008bc], Data:[32'h0007ff48] Success at time           1991010000. 
+Info.	PCIe EP CFG DBI al6010pcieGOlbHyhb(         86) al6010pcieLt3iuuJD
+Debug: Enable rc bus master at time:               79992
+Debug: EP and RC are link up ing ... at time:               80104
+         37254400000 tb_sgdma_fsim.u_subsys_exam.u_sgdma_subsys.u_ep_core.uep_PH1_PHY_PCIE.al6010pcieP5dgfBoe.PROTECTED al6010pcieS_a58J6M:  al6010pcie9_ofqm48 al6010pcie9ZX9pKA3 al6010pciefXEI2BYz al6010pcie8KPfiM1O al6010pcielDGGVMPn al6010pcies1V2t37T al6010pcieLhA1mpj_ al6010pcieab3glnU0
+Debug: EP and RC alreay link up at time:              385320
+Debug: RC side read device id is abcd  and  vendor id is 1edb at time:               385432
+Debug: EP side read device id is abcd  and  vendor id is 1edb at time:               387112
+Debug: Enable ep bus master at time:              387112
+Debug: Link up speed : gen1 at time:              388888
+Debug: Link up width : x4 at time:              388888
+Debug: EP msp support is   2048 at time:              390568
+Debug: RC set EP msp  is   2048 at time:              394120
+Debug: RC set EP mrrs is   2048 at time:              394120
+Debug: Bar0 is 32bit memory bar at time:              397480
+Debug: Bar0 assign address is 80000000 at time:              400808
+Debug: RC configure base address and limit address at:              400808
+Debug: Msi interrupt enable at time:              400920
+Debug: PCIe dbi configuration over at time:              412600
+CASE41 test start...
+H2C0 version xxxxxxxxxxxxxxxxxxxxxxxx1fc08001
+C2H0 version xxxxxxxxxxxxxxxxxxxxxxxx1fc18001
+engine run
+Loopback mode test over,and rc receives  2 interrputs!
+CaseN write back done!
+Start to save data, and compare results!
+Data dump end!
+$finish called from file "../bfm/ip_datarw.v", line 367.
+$finish at simulation time          44820000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 448200000000 fs
+CPU Time:    288.420 seconds;       Data structure size: 214.7Mb
+Fri Apr 21 15:53:41 2023
+CPU time: 320.363 seconds to compile + 26.058 seconds to elab + 2.246 seconds to link + 288.479 seconds in simulation

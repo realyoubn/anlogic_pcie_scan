@@ -1,0 +1,256 @@
+standard
+***Report Model: pcie_scan Device: PH1A400SFG900***
+
+Design Statistics
+#IO                       105
+  #input                   45
+  #output                  59
+  #inout                    1
+#lut6                    6758   out of 231680    2.92%
+#reg                     7347
+  #slice reg             7347   out of 463360    1.59%
+  #pad reg                  0
+
+Utilization Statistics
+#slice                   8551   out of 231680    3.69%
+  #used ram                16
+    #dram                  16
+    #shifter                0
+  #used logic            8535
+    #with luts           6742
+    #with adder          1354
+    #reg only             439
+#feedthrough             3054
+#f7mux                    552   out of 115840    0.48%
+#f8mux                    276   out of  57920    0.48%
+#dsp                        0   out of    840    0.00%
+#eram                      33   out of    914    3.61%
+  #eram20k                 20
+  #fifo20k                 13
+#pad                       87   out of    501   17.37%
+#pll                        4   out of     20   20.00%
+#pcie                       1   out of      1  100.00%
+#serdes                     2   out of      8   25.00%
+#gclk                      16   out of     32   50.00%
+#lclk                       0   out of     56    0.00%
+#mlclk                      0   out of     26    0.00%
+#ioclk                      0   out of     40    0.00%
+
+Clock Resource Statistics
+Index     ClockNet                                               Type            DriverType         Driver                                                                 ClockFanout
+#1        u_sgdma_subsys/u_sys_ctrl/core_clk_r                   UserGclk        pll                u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst.clkc1                     3512
+#2        uut/u_ubus_top/u_local_bus_slve_cis/u_uart_2dsp/clk    InferredGclk    pll                uut/u_ubus_top/u_pll2/pll_inst.clkc1                                   350
+#3        app_auxclk_dup_1                                       UserGclk        io                 app_auxclk_syn_2.di                                                    345
+#4        cisclk6_dup_1                                          InferredGclk    pll                uut/u_pll/pll_inst.clkc1                                               241
+#5        uut/WRADDATA/clk                                       InferredGclk    pll                uut/u_pll/pll_inst.clkc4                                               107
+#6        uut/uADConfig1/clk_sck                                 InferredGclk    pll                uut/u_pll3/pll_inst.clkc1                                              52
+#7        u_sgdma_subsys/u_sys_ctrl/aux_clk                      InferredGclk    pcie               u_sgdma_subsys/u_ep_core/uep_PH1_PHY_PCIE.muxd_aux_clk                 28
+#8        mclk2_dup_1                                            InferredGclk    pll                uut/u_pll/pll_inst.clkc2                                               1
+#9        u_sgdma_subsys/u_sys_ctrl/u_sys_pll/clk0_buf           UserGclk        pll                u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst.clkc0                     1
+#10       uut/u_pll/clk0_buf                                     UserGclk        pll                uut/u_pll/pll_inst.clkc0                                               1
+#11       uut/u_pll3/clk0_buf                                    UserGclk        pll                uut/u_pll3/pll_inst.clkc0                                              1
+#12       uut/u_ubus_top/u_pll2/clk0_buf                         UserGclk        pll                uut/u_ubus_top/u_pll2/pll_inst.clkc0                                   1
+#13       u_sgdma_subsys/u_sgdma_ip/u_sgdma_ctrl/c2h_rst[0]      UserGclk        lslice             u_sgdma_subsys/u_sgdma_ip/u_sgdma_ctrl/c2h_rst_reg[0]_reg_syn_3.oqa    0
+#14       u_sgdma_subsys/u_sgdma_ip/u_sgdma_ctrl/h2c_rst[0]      UserGclk        lslice             u_sgdma_subsys/u_sgdma_ip/u_sgdma_ctrl/h2c_rst_reg[0]_reg_syn_3.oqb    0
+#15       u_sgdma_subsys/u_sys_ctrl/sync_rst_n_r2                UserGclk        lslice             u_sgdma_subsys/u_sys_ctrl/sync_rst_n_r2_reg_syn_7.oqa                  0
+#16       vsmp2_dup_1                                            InferredGclk    pll                uut/u_pll/pll_inst.clkc3                                               0
+
+
+Detailed IO Report
+
+         Name           Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+      app_auxclk          INPUT        U27        LVCMOS33          N/A           NONE       NONE    
+  app_power_up_rst_n      INPUT        L13        LVCMOS33          N/A          PULLUP      NONE    
+       in1[15]            INPUT        AH30       LVCMOS33          N/A          PULLUP      NONE    
+       in1[14]            INPUT        AG30       LVCMOS33          N/A          PULLUP      NONE    
+       in1[13]            INPUT        AD21       LVCMOS33          N/A          PULLUP      NONE    
+       in1[12]            INPUT        AE21       LVCMOS33          N/A          PULLUP      NONE    
+       in1[11]            INPUT        AG20       LVCMOS33          N/A          PULLUP      NONE    
+       in1[10]            INPUT        AH20       LVCMOS33          N/A          PULLUP      NONE    
+        in1[9]            INPUT        AC20       LVCMOS33          N/A          PULLUP      NONE    
+        in1[8]            INPUT        AC21       LVCMOS33          N/A          PULLUP      NONE    
+        in1[7]            INPUT        AB22       LVCMOS33          N/A          PULLUP      NONE    
+        in1[6]            INPUT        AB23       LVCMOS33          N/A          PULLUP      NONE    
+        in1[5]            INPUT        AA22       LVCMOS33          N/A          PULLUP      NONE    
+        in1[4]            INPUT        AA23       LVCMOS33          N/A          PULLUP      NONE    
+        in1[3]            INPUT        Y26        LVCMOS33          N/A          PULLUP      NONE    
+        in1[2]            INPUT        AA26       LVCMOS33          N/A          PULLUP      NONE    
+        in1[1]            INPUT        W29        LVCMOS33          N/A          PULLUP      NONE    
+        in1[0]            INPUT        Y29        LVCMOS33          N/A          PULLUP      NONE    
+       in2[15]            INPUT        R24        LVCMOS33          N/A          PULLUP      NONE    
+       in2[14]            INPUT        P21        LVCMOS33          N/A          PULLUP      NONE    
+       in2[13]            INPUT        N30        LVCMOS33          N/A          PULLUP      NONE    
+       in2[12]            INPUT        L27        LVCMOS33          N/A          PULLUP      NONE    
+       in2[11]            INPUT        J21        LVCMOS33          N/A          PULLUP      NONE    
+       in2[10]            INPUT        G25        LVCMOS33          N/A          PULLUP      NONE    
+        in2[9]            INPUT        H24        LVCMOS33          N/A          PULLUP      NONE    
+        in2[8]            INPUT        D28        LVCMOS33          N/A          PULLUP      NONE    
+        in2[7]            INPUT        B27        LVCMOS33          N/A          PULLUP      NONE    
+        in2[6]            INPUT        D23        LVCMOS33          N/A          PULLUP      NONE    
+        in2[5]            INPUT        A20        LVCMOS33          N/A          PULLUP      NONE    
+        in2[4]            INPUT        F18        LVCMOS33          N/A          PULLUP      NONE    
+        in2[3]            INPUT        D22        LVCMOS33          N/A          PULLUP      NONE    
+        in2[2]            INPUT        L18        LVCMOS33          N/A          PULLUP      NONE    
+        in2[1]            INPUT        B14        LVCMOS33          N/A          PULLUP      NONE    
+        in2[0]            INPUT        E16        LVCMOS33          N/A          PULLUP      NONE    
+       ubus_rx            INPUT        AJ27       LVCMOS33          N/A          PULLUP      NONE    
+         SCK1            OUTPUT        AF28       LVCMOS33           8            NONE       NONE    
+         SEN1            OUTPUT        AE29       LVCMOS33           8            NONE       NONE    
+       cisclk1           OUTPUT        AB29       LVCMOS33           8            NONE       NONE    
+       cisclk2           OUTPUT        AE20       LVCMOS33           8            NONE       NONE    
+       cisclk3           OUTPUT        AF20       LVCMOS33           8            NONE       NONE    
+       cisclk4           OUTPUT        AH24       LVCMOS33           8            NONE       NONE    
+       cisclk5           OUTPUT        AC22       LVCMOS33           8            NONE       NONE    
+       cisclk6           OUTPUT        Y21        LVCMOS33           8            NONE       NONE    
+        cism1            OUTPUT        AH27       LVCMOS33           8            NONE       NONE    
+        cism2            OUTPUT        AE30       LVCMOS33           8            NONE       NONE    
+        cism3            OUTPUT        AD28       LVCMOS33           8            NONE       NONE    
+        cism4            OUTPUT        AA27       LVCMOS33           8            NONE       NONE    
+        cism5            OUTPUT        W19        LVCMOS33           8            NONE       NONE    
+        cism6            OUTPUT        V19        LVCMOS33           8            NONE       NONE    
+       clk_cis           OUTPUT        U25        LVCMOS33           8            NONE       NONE    
+     core_clk_led        OUTPUT        P27        LVCMOS33           8            NONE       NONE    
+         led0            OUTPUT        J11        LVCMOS33           8            NONE       NONE    
+       led1A_b           OUTPUT        AB28       LVCMOS33           8            NONE       NONE    
+       led1A_g           OUTPUT        AC29       LVCMOS33           8            NONE       NONE    
+       led1A_r           OUTPUT        AC30       LVCMOS33           8            NONE       NONE    
+       led1B_b           OUTPUT        D13        LVCMOS33           8            NONE       NONE    
+       led1B_g           OUTPUT        H15        LVCMOS33           8            NONE       NONE    
+       led1B_r           OUTPUT        K15        LVCMOS33           8            NONE       NONE    
+       led2A_b           OUTPUT        AD14       LVCMOS18           8           PULLUP      NONE    
+       led2A_g           OUTPUT        AA18       LVCMOS18           8           PULLUP      NONE    
+       led2A_r           OUTPUT        AG18       LVCMOS18           8           PULLUP      NONE    
+       led2B_b           OUTPUT        AH17       LVCMOS18           8           PULLUP      NONE    
+       led2B_g           OUTPUT        AD13       LVCMOS18           8           PULLUP      NONE    
+       led2B_r           OUTPUT        AE13       LVCMOS18           8           PULLUP      NONE    
+        mclk1            OUTPUT        W27        LVCMOS33           8            NONE       NONE    
+        mclk2            OUTPUT        AF10       LVCMOS18           8           PULLUP      NONE    
+         si1             OUTPUT        AB30       LVCMOS33           8            NONE       NONE    
+         si2             OUTPUT        AD8        LVCMOS18           8           PULLUP      NONE    
+         si3             OUTPUT        AC9        LVCMOS18           8           PULLUP      NONE    
+         si4             OUTPUT        AJ6        LVCMOS18           8           PULLUP      NONE    
+         si5             OUTPUT        AK1        LVCMOS18           8           PULLUP      NONE    
+         si6             OUTPUT        AF5        LVCMOS18           8           PULLUP      NONE    
+       ubus_tx           OUTPUT        AH26       LVCMOS33           8           PULLUP      NONE    
+     user_lnk_up         OUTPUT        K11        LVCMOS33           8            NONE       NONE    
+        vsmp1            OUTPUT        AE28       LVCMOS33           8            NONE       NONE    
+        vsmp2            OUTPUT        AD6        LVCMOS18           8           PULLUP      NONE    
+         x0_p            OUTPUT        C29         LVDS25           N/A           NONE       NONE    
+       x0_p(n)           OUTPUT        B29         LVDS25           N/A           NONE       NONE    
+         x1_p            OUTPUT        G29         LVDS25           N/A           NONE       NONE    
+       x1_p(n)           OUTPUT        F30         LVDS25           N/A           NONE       NONE    
+         x2_p            OUTPUT        B30         LVDS25           N/A           NONE       NONE    
+       x2_p(n)           OUTPUT        A30         LVDS25           N/A           NONE       NONE    
+         x3_p            OUTPUT        C24         LVDS25           N/A           NONE       NONE    
+       x3_p(n)           OUTPUT        B24         LVDS25           N/A           NONE       NONE    
+        xclk_p           OUTPUT        A16         LVDS25           N/A           NONE       NONE    
+      xclk_p(n)          OUTPUT        A17         LVDS25           N/A           NONE       NONE    
+         SDI1             INOUT        AD29       LVCMOS33           8           PULLUP      NONE    
+     refclk_p[0]          INPUT         L8          CML             N/A           NONE       NONE    
+     refclk_n[0]          INPUT         L7          CML             N/A           NONE       NONE    
+        txp[3]           OUTPUT         P2          CML             N/A           NONE       NONE    
+        txn[3]           OUTPUT         P1          CML             N/A           NONE       NONE    
+        rxp[3]            INPUT         T6          CML             N/A           NONE       NONE    
+        rxn[3]            INPUT         T5          CML             N/A           NONE       NONE    
+        txp[2]           OUTPUT         N4          CML             N/A           NONE       NONE    
+        txn[2]           OUTPUT         N3          CML             N/A           NONE       NONE    
+        rxp[2]            INPUT         R4          CML             N/A           NONE       NONE    
+        rxn[2]            INPUT         R3          CML             N/A           NONE       NONE    
+        txp[1]           OUTPUT         M2          CML             N/A           NONE       NONE    
+        txn[1]           OUTPUT         M1          CML             N/A           NONE       NONE    
+        rxp[1]            INPUT         P6          CML             N/A           NONE       NONE    
+        rxn[1]            INPUT         P5          CML             N/A           NONE       NONE    
+        txp[0]           OUTPUT         L4          CML             N/A           NONE       NONE    
+        txn[0]           OUTPUT         L3          CML             N/A           NONE       NONE    
+        rxp[0]            INPUT         M6          CML             N/A           NONE       NONE    
+        rxn[0]            INPUT         M5          CML             N/A           NONE       NONE    
+
+Report Hierarchy Area:
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                     |Module             |lut     |ripple  |seq     |eram    |dsp     |dram    |shifter |f7mux   |f8mux   |pll     |serdes  |pcie    |ddr     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                          |pcie_scan          |6758    |1354    |7347    |33      |0       |16      |0       |552     |276     |4       |2       |1       |0       |
+|  u_reg_config               |reg_config         |81      |0       |173     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|  u_sgdma_app                |sgdma_app          |312     |75      |407     |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_cfg_regrw              |cfg_regrw          |10      |0       |70      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_tst_ctrl               |app_tst_ctrl       |15      |12      |14      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_c2h0r              |usr_c2h0r          |71      |0       |102     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_h2c0w              |usr_h2c0w          |131     |63      |119     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_regrw              |usr_regrw          |40      |0       |102     |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_ram512x32            |ram512x32          |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|  u_sgdma_subsys             |sgdma_subsys       |5287    |848     |4763    |24      |0       |16      |0       |550     |275     |1       |2       |1       |0       |
+|    u_ep_core                |pcie_ep_core       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |2       |1       |0       |
+|    u_ep_dbi_init_mux        |ep_dbi_init_mux    |95      |0       |193     |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_pcie_cfg_rom         |ep_cfg_rom         |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_sgdma_ip               |sgdma_ip           |5158    |794     |4485    |22      |0       |16      |0       |550     |275     |0       |0       |0       |0       |
+|      u_drv_usrrw            |drv_usrrw          |56      |0       |107     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_dscpr_cal            |dscpr_cal          |162     |76      |133     |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_dscpr_sfifo512x64  |sfifo512x64        |24      |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_dscpw_cal            |dscpw_cal          |160     |76      |135     |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_dscpw_sfifo512x64  |sfifo512x64        |26      |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_excep_hndl           |excep_hndl         |4       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_irq_hndl             |irq_hndl           |25      |0       |20      |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_irq_sfifo512x16    |sfifo512x16        |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_arb              |mrd_arb            |137     |0       |106     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_axi4s0           |mrd_axi4s0         |1111    |12      |521     |0       |0       |0       |0       |288     |144     |0       |0       |0       |0       |
+|      u_mrd_relor            |mrd_relor          |122     |33      |155     |5       |0       |0       |0       |6       |3       |0       |0       |0       |0       |
+|        u_mrd_ram512x128     |ram512x128         |0       |0       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_mrd_ram512x27      |ram512x27          |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_rx               |mrd_rx             |286     |0       |472     |0       |0       |8       |0       |0       |0       |0       |0       |0       |0       |
+|        u_mrd_dram           |dram32x13          |10      |0       |12      |0       |0       |8       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_schd             |mrd_schd           |39      |14      |22      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_tlp              |mrd_tlp            |95      |0       |143     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mwr_arb              |mwr_arb            |149     |0       |100     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mwr_axi4s0           |mwr_axi4s0         |1134    |62      |756     |4       |0       |8       |0       |256     |128     |0       |0       |0       |0       |
+|        u_mwr_dram32x13      |dram32x13          |8       |0       |13      |0       |0       |8       |0       |0       |0       |0       |0       |0       |0       |
+|        u_mwr_safifo512x128  |safifo512x128      |354     |10      |337     |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mwr_tlp              |mwr_tlp            |131     |11      |142     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_pcie_cfgrw           |pcie_cfgrw         |63      |0       |105     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_perf_stat            |perf_stat          |140     |232     |250     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_rdscp_cal            |rdscp_cal          |225     |123     |289     |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_rdscp_sfifo512x128 |sfifo512x128       |0       |0       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_sgdma_ctrl           |sgdma_ctrl         |29      |32      |41      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_sgdma_regrw          |sgdma_regrw        |829     |0       |652     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_wdscp_cal            |wdscp_cal          |261     |123     |332     |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_wdscp_sfifo512x128 |sfifo512x128       |0       |0       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_status_sig             |status_sig         |0       |24      |23      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_sys_ctrl               |sys_ctrl           |30      |18      |53      |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|      u_sys_pll              |sys_pll            |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|  u_swith                    |swith              |236     |0       |424     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|  uut                        |python             |807     |431     |1546    |8       |0       |0       |0       |2       |1       |3       |0       |0       |0       |
+|    DPRAMA1                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DPRAMA2                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DPRAMB1                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DPRAMB2                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DRAM_reverse             |DRAM_reverse       |175     |117     |275     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      fifo0                  |fifo_generator_0   |33      |0       |67      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    SYNC_ASYNC_RST           |SYNC_ASYNC_RST     |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    WRADDATA                 |WRADDATA           |89      |70      |164     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    gen_sp                   |gen_sp             |8       |32      |38      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    op                       |op                 |1       |0       |3       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    signal                   |signal             |46      |32      |97      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    trigger                  |trigger            |21      |17      |20      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    uADConfig1               |ADconfig           |52      |24      |72      |0       |0       |0       |0       |2       |1       |0       |0       |0       |0       |
+|    u_cis_exposure1          |cis_exposure       |57      |46      |76      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_cis_exposure2          |cis_exposure       |34      |32      |64      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_pll                    |pll                |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|    u_pll3                   |pll3               |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|    u_ubus_top               |ubus_top           |278     |45      |595     |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|      u_local_bus_slve_cis   |local_bus_slve_cis |278     |45      |595     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_uart_2dsp          |uart_2dsp          |90      |45      |82      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_pll2                 |pll2               |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets   
+    #1          1       10912  
+    #2          2       2803   
+    #3          3       1660   
+    #4          4        475   
+    #5        5-10      1232   
+    #6        11-50      807   
+    #7       51-100      11    
+    #8       101-500      2    
+  Average     2.72             

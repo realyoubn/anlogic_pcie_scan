@@ -1,0 +1,2011 @@
+============================================================
+   Tang Dynasty, V5.6.71036
+      Copyright (c) 2012-2023 Anlogic Inc.
+   Executable = C:/Anlogic/TD5.6.2/bin/td.exe
+   Built at =   20:34:38 Mar 21 2023
+   Run by =     huagao
+   Run Date =   Thu Oct 24 15:01:29 2024
+
+   Run on =     DESKTOP-IGJ7T4Q
+============================================================
+RUN-1002 : start command "open_project pcie_scan.prj"
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/src/sys_ctrl.v
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in ../../../../src/sgdma_ip/src/sys_ctrl.v(1)
+HDL-1007 : back to file '../../../../src/sgdma_ip/src/sys_ctrl.v' in ../../../../src/sgdma_ip/src/sys_ctrl.v(1)
+HDL-1007 : analyze verilog file ../../../../src/scan/ADConfig.v
+HDL-1007 : analyze verilog file ../../../../src/scan/CISOUT.v
+HDL-1007 : analyze verilog file ../../../../src/scan/DRAM_reverse.v
+HDL-1007 : undeclared symbol 'tlast_dpi', assumed default net type 'wire' in ../../../../src/scan/DRAM_reverse.v(274)
+HDL-1007 : analyze VHDL file ../../../../src/scan/SYNC_ASYNC_RST.vhd
+HDL-1007 : analyze entity sync_async_rst in ../../../../src/scan/SYNC_ASYNC_RST.vhd(32)
+HDL-1007 : analyze architecture behavior in ../../../../src/scan/SYNC_ASYNC_RST.vhd(38)
+HDL-1007 : analyze verilog file ../../../../src/scan/WRADDATA.v
+HDL-1007 : analyze verilog file ../../../../src/scan/al_ip/DPRAM.v
+HDL-1007 : analyze verilog file ../../../../src/scan/al_ip/fifo_generator_0.v
+HDL-1007 : analyze verilog file ../../../../src/scan/al_ip/pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../../../src/scan/al_ip/pll.v(124)
+HDL-1007 : analyze verilog file ../../../../src/scan/al_ip/pll2.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../../../src/scan/al_ip/pll2.v(94)
+HDL-1007 : analyze verilog file ../../../../src/scan/al_ip/pll3.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../../../src/scan/al_ip/pll3.v(94)
+HDL-1007 : analyze verilog file ../../../../src/scan/cis_exposure.v
+HDL-1007 : analyze verilog file ../../../../src/scan/down_clocking_even.v
+HDL-1007 : undeclared symbol 'iborrow', assumed default net type 'wire' in ../../../../src/scan/down_clocking_even.v(18)
+HDL-1007 : analyze verilog file ../../../../src/scan/down_clocking_odd.v
+HDL-1007 : analyze verilog file ../../../../src/scan/gen_sp.v
+HDL-1007 : analyze verilog file ../../../../src/scan/glitch_filter.v
+HDL-1007 : analyze verilog file ../../../../src/scan/localbus/CRC4_D16.v
+HDL-1007 : analyze verilog file ../../../../src/scan/localbus/local_bus_slve_cis.v
+HDL-1007 : analyze verilog file ../../../../src/scan/localbus/uart_2dsp_36mhz.v
+HDL-1007 : analyze verilog file ../../../../src/scan/localbus/ubus_top.v
+HDL-1007 : undeclared symbol 'uart_crc_error_n', assumed default net type 'wire' in ../../../../src/scan/localbus/ubus_top.v(58)
+HDL-1007 : undeclared symbol 'ubus_identify', assumed default net type 'wire' in ../../../../src/scan/localbus/ubus_top.v(59)
+HDL-1007 : analyze verilog file ../../../../src/scan/lvds_tx.v
+HDL-1007 : analyze verilog file ../../../../src/scan/minus_one.v
+HDL-1007 : analyze verilog file ../../../../src/scan/op.v
+HDL-1007 : analyze verilog file ../../../../src/scan/pwm.v
+HDL-1007 : analyze verilog file ../../../../src/scan/python.v
+HDL-1007 : undeclared symbol 'clk_ADC_config', assumed default net type 'wire' in ../../../../src/scan/python.v(565)
+HDL-1007 : undeclared symbol 'debug', assumed default net type 'wire' in ../../../../src/scan/python.v(568)
+HDL-1007 : undeclared symbol 'reset_n', assumed default net type 'wire' in ../../../../src/scan/python.v(582)
+HDL-1007 : undeclared symbol 'sys_rst_done', assumed default net type 'wire' in ../../../../src/scan/python.v(595)
+HDL-1007 : undeclared symbol 'Extri', assumed default net type 'wire' in ../../../../src/scan/python.v(613)
+HDL-1007 : undeclared symbol 'trigerInner1', assumed default net type 'wire' in ../../../../src/scan/python.v(659)
+HDL-1007 : undeclared symbol 'trigerInner2', assumed default net type 'wire' in ../../../../src/scan/python.v(660)
+HDL-1007 : undeclared symbol 'led_start', assumed default net type 'wire' in ../../../../src/scan/python.v(755)
+HDL-1007 : undeclared symbol 'led_stop', assumed default net type 'wire' in ../../../../src/scan/python.v(756)
+HDL-1007 : undeclared symbol 'ledr1', assumed default net type 'wire' in ../../../../src/scan/python.v(892)
+HDL-1007 : undeclared symbol 'ledg1', assumed default net type 'wire' in ../../../../src/scan/python.v(893)
+HDL-1007 : undeclared symbol 'ledb1', assumed default net type 'wire' in ../../../../src/scan/python.v(894)
+HDL-1007 : undeclared symbol 'ledr2', assumed default net type 'wire' in ../../../../src/scan/python.v(911)
+HDL-1007 : undeclared symbol 'ledg2', assumed default net type 'wire' in ../../../../src/scan/python.v(912)
+HDL-1007 : undeclared symbol 'ledb2', assumed default net type 'wire' in ../../../../src/scan/python.v(913)
+HDL-1007 : undeclared symbol 'ad_sck1', assumed default net type 'wire' in ../../../../src/scan/python.v(991)
+HDL-1007 : undeclared symbol 'ad_sen1', assumed default net type 'wire' in ../../../../src/scan/python.v(992)
+HDL-1007 : undeclared symbol 'ad_sck2', assumed default net type 'wire' in ../../../../src/scan/python.v(1012)
+HDL-1007 : undeclared symbol 'ad_sen2', assumed default net type 'wire' in ../../../../src/scan/python.v(1013)
+HDL-1007 : undeclared symbol 'rden3', assumed default net type 'wire' in ../../../../src/scan/python.v(1193)
+HDL-1007 : undeclared symbol 'rden3b', assumed default net type 'wire' in ../../../../src/scan/python.v(1194)
+HDL-1007 : undeclared symbol 'rden4', assumed default net type 'wire' in ../../../../src/scan/python.v(1195)
+HDL-1007 : undeclared symbol 'rden4b', assumed default net type 'wire' in ../../../../src/scan/python.v(1196)
+HDL-1007 : undeclared symbol 'pos_rden1', assumed default net type 'wire' in ../../../../src/scan/python.v(1467)
+HDL-1007 : undeclared symbol 'pos_rden1b', assumed default net type 'wire' in ../../../../src/scan/python.v(1468)
+HDL-1007 : analyze verilog file ../../../../src/scan/signal.v
+HDL-1007 : analyze verilog file ../../../../src/scan/trigger.v
+HDL-1007 : analyze verilog file ../../../../src/scan/xiaodou.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/ip/ram512x32.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/app_tst_ctrl.v
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/app_tst_ctrl.v(1)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/app_tst_ctrl.v' in ../../../../src/sgdma_app/src/app_tst_ctrl.v(1)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/cfg_regrw.v
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/cfg_regrw.v(2)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/cfg_regrw.v' in ../../../../src/sgdma_app/src/cfg_regrw.v(2)
+HDL-1007 : undeclared symbol 'cfg_regrw_run_falling', assumed default net type 'wire' in ../../../../src/sgdma_app/src/cfg_regrw.v(39)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/dma_regrw.v
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/dma_regrw.v(2)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/dma_regrw.v' in ../../../../src/sgdma_app/src/dma_regrw.v(2)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/sgdma_app.v
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/sgdma_app.v(2)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/sgdma_app.v' in ../../../../src/sgdma_app/src/sgdma_app.v(2)
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../../tb/def/tlp_fmt_type.vh in ../../../../src/sgdma_app/src/sgdma_app.v(3)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/sgdma_app.v' in ../../../../src/sgdma_app/src/sgdma_app.v(3)
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../../tb/def/dt_para.vh in ../../../../src/sgdma_app/src/sgdma_app.v(4)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/sgdma_app.v' in ../../../../src/sgdma_app/src/sgdma_app.v(4)
+HDL-1007 : undeclared symbol 'usr_c2h0err', assumed default net type 'wire' in ../../../../src/sgdma_app/src/sgdma_app.v(319)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/usr_c2h0r.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/usr_h2c0w.v
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/usr_h2c0w.v(1)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/usr_h2c0w.v' in ../../../../src/sgdma_app/src/usr_h2c0w.v(1)
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../../tb/def/tlp_fmt_type.vh in ../../../../src/sgdma_app/src/usr_h2c0w.v(2)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/usr_h2c0w.v' in ../../../../src/sgdma_app/src/usr_h2c0w.v(2)
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../../tb/def/dt_para.vh in ../../../../src/sgdma_app/src/usr_h2c0w.v(3)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/usr_h2c0w.v' in ../../../../src/sgdma_app/src/usr_h2c0w.v(3)
+HDL-1007 : undeclared symbol 'h2c_fm_odt', assumed default net type 'wire' in ../../../../src/sgdma_app/src/usr_h2c0w.v(104)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/usr_lp0rw.v
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/usr_lp0rw.v(1)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/usr_lp0rw.v' in ../../../../src/sgdma_app/src/usr_lp0rw.v(1)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_app/src/usr_regrw.v
+HDL-1007 : analyze included file ../../../../src/sgdma_app/src/../../sgdma_ip/def/para_def.vh in ../../../../src/sgdma_app/src/usr_regrw.v(2)
+HDL-1007 : back to file '../../../../src/sgdma_app/src/usr_regrw.v' in ../../../../src/sgdma_app/src/usr_regrw.v(2)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/def/pcie_brup_def.vh
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/dram32x13.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/pcie_ep_core.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/ram512x128.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/ram512x27.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/safifo512x128.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/sfifo512x128.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/sfifo512x16.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/sfifo512x64.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/ip/sys_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../../../src/sgdma_ip/ip/sys_pll.v(75)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/src/ep_dbi_init_mux.v
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/src/sgdma_ip_all.enc.v
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in ../../../../src/sgdma_ip/src/sgdma_ip_all.enc.v(10)
+HDL-1007 : back to file '../../../../src/sgdma_ip/src/sgdma_ip_all.enc.v' in ../../../../src/sgdma_ip/src/sgdma_ip_all.enc.v(10)
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(1433)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(1433)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(1850)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(1850)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(2129)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(2129)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(2404)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(2404)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(2505)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(2505)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(2715)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(2715)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(2873)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(2873)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(3321)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(3321)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(3614)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(3614)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(4044)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(4044)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(4222)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(4222)
+HDL-1007 : analyze included file ../../../../src/sgdma_ip/src/../def/para_def.vh in encrypted_text(4601)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(4601)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(5277)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(5277)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(5650)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(5650)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(5937)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(5937)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/sgdma_ip/src/../../sgdma_ip/def/para_def.vh in encrypted_text(6393)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(6393)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(7055)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(7055)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(7150)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(7150)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(7394)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(7394)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-5007 WARNING: overwrite current ** '**' in encrypted_text(0)
+HDL-1007 : previous definition of design element '**' is here in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(9059)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(9059)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/sgdma_ip/src/../../sgdma_ip/def/para_def.vh in encrypted_text(9446)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(9446)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in encrypted_text(10498)
+HDL-1007 : back to file 'encrypted_text' in encrypted_text(10498)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in encrypted_text(0)
+HDL-1007 : back to file '../../../../src/sgdma_ip/src/sgdma_ip_all.enc.v' in ../../../../src/sgdma_ip/src/sgdma_ip_all.enc.v(7651)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/src/sgdma_subsys.v
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in ../../../../src/sgdma_ip/src/sgdma_subsys.v(2)
+HDL-1007 : back to file '../../../../src/sgdma_ip/src/sgdma_subsys.v' in ../../../../src/sgdma_ip/src/sgdma_subsys.v(2)
+HDL-1007 : undeclared symbol 'core_rst_n', assumed default net type 'wire' in ../../../../src/sgdma_ip/src/sgdma_subsys.v(422)
+HDL-1007 : undeclared symbol 'ven_msi_grant', assumed default net type 'wire' in ../../../../src/sgdma_ip/src/sgdma_subsys.v(538)
+HDL-1007 : undeclared symbol 'drp_app_dbi_ro_wr_disable', assumed default net type 'wire' in ../../../../src/sgdma_ip/src/sgdma_subsys.v(659)
+HDL-1007 : undeclared symbol 'ext_drp_app_dbi_ro_wr_disable', assumed default net type 'wire' in ../../../../src/sgdma_ip/src/sgdma_subsys.v(1092)
+HDL-1007 : analyze verilog file ../../../../src/sgdma_ip/src/status_sig.v
+HDL-1007 : analyze included file ../../../../src/scan/../../src/sgdma_ip/def/para_def.vh in ../../../../src/sgdma_ip/src/status_sig.v(1)
+HDL-1007 : back to file '../../../../src/sgdma_ip/src/status_sig.v' in ../../../../src/sgdma_ip/src/status_sig.v(1)
+HDL-1007 : analyze verilog file ../../../../src/top/pcie_scan.v
+HDL-1007 : analyze included file ../../../../src/top/../../src/sgdma_ip/def/para_def.vh in ../../../../src/top/pcie_scan.v(1)
+HDL-1007 : back to file '../../../../src/top/pcie_scan.v' in ../../../../src/top/pcie_scan.v(1)
+HDL-1007 : analyze included file ../../../../src/top/../../tb/def/tlp_fmt_type.vh in ../../../../src/top/pcie_scan.v(2)
+HDL-1007 : back to file '../../../../src/top/pcie_scan.v' in ../../../../src/top/pcie_scan.v(2)
+HDL-1007 : analyze included file ../../../../src/top/../../tb/def/dt_para.vh in ../../../../src/top/pcie_scan.v(3)
+HDL-1007 : back to file '../../../../src/top/pcie_scan.v' in ../../../../src/top/pcie_scan.v(3)
+HDL-1007 : analyze verilog file ../../../../src/swith/reg_config.v
+HDL-1007 : analyze verilog file ../../../../src/swith/swith.v
+RUN-1001 : Project manager successfully analyzed 56 source files.
+RUN-1002 : start command "import_device ph1_400.db -package PH1A400SFG900 -speed 2"
+ARC-1001 : Device Initialization.
+ARC-1001 : ----------------------------------------------------------------
+ARC-1001 :           OPTION          |          IO           |   SETTING   
+ARC-1001 : ----------------------------------------------------------------
+ARC-1001 :   non_jtag_persist(none)  |        36 IOs         |    gpio    
+ARC-1001 :            jtag           |  L10/E10/F10/H10/G10  |  dedicate  
+ARC-1001 : ----------------------------------------------------------------
+RUN-1003 : finish command "import_device ph1_400.db -package PH1A400SFG900 -speed 2" in  20.796055s wall, 20.328125s user + 0.453125s system = 20.781250s CPU (99.9%)
+
+RUN-1004 : used memory is 1091 MB, reserved memory is 1101 MB, peak memory is 1091 MB
+RUN-1002 : start command "elaborate -top pcie_scan"
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : port 'x0_p' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'x1_p' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'x2_p' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'x3_p' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'xclk_p' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'mclk' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'vsmp' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : port 'clk_wram' remains unconnected for this instance in ../../../../src/top/pcie_scan.v(552)
+HDL-1007 : elaborate module pcie_scan in ../../../../src/top/pcie_scan.v(4)
+HDL-5007 WARNING: port 'phy_cr_para_clk' is not connected on this instance in ../../../../src/sgdma_ip/src/sgdma_subsys.v(462)
+HDL-1007 : elaborate module sgdma_subsys in ../../../../src/sgdma_ip/src/sgdma_subsys.v(3)
+HDL-1007 : elaborate module PH1_LOGIC_BUF in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(291)
+HDL-1007 : elaborate module PH1_PHY_GCLK_V2 in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(2836)
+HDL-1007 : elaborate module sys_ctrl in ../../../../src/sgdma_ip/src/sys_ctrl.v(2)
+HDL-1007 : elaborate module sys_pll in ../../../../src/sgdma_ip/ip/sys_pll.v(4)
+HDL-1007 : elaborate module PH1_LOGIC_BUFG in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(10602)
+HDL-1007 : elaborate module PH1_PHY_PLL(CLKC0_CPHASE=7,CLKC1_CPHASE=7,CLKC0_DIV=8,CLKC1_DIV=8,CLKC0_DUTY_INT=4,CLKC1_DUTY_INT=4,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FIN="125.000",PLL_USR_RST="ENABLE",PLL_FEED_TYPE="EXTERNAL",LPF_RES=1,ICP_CUR=13,GMC_GAIN=3,SSC_RNGE=0) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(624)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(43)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(44)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(47)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(53)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(55)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(61)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(63)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(65)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(71)
+HDL-5007 WARNING: delay control is not supported for synthesis in ../../../../src/sgdma_ip/src/sys_ctrl.v(73)
+HDL-5007 Similar messages will be suppressed.
+HDL-1007 : elaborate module pcie_ep_core in ../../../../src/sgdma_ip/ip/pcie_ep_core.v(13)
+HDL-1007 : elaborate module PH1_PHY_PCIE_V2(AL_PH1_PCIE_CFG_FILE="pcie_ep_core.txt",CORE_CLK_WINDOW_SET=5'b01,MUXD_AUX_CLK_WINDOW_SET=5'b01,MUXD_AUX_CLK_G_WINDOW_SET=5'b01) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(2904)
+HDL-5007 WARNING: actual bit length 2 differs from formal bit length 4 for port 'radm_bypass_dwen' in ../../../../src/sgdma_ip/src/sgdma_subsys.v(676)
+HDL-1007 : elaborate module status_sig in ../../../../src/sgdma_ip/src/status_sig.v(2)
+HDL-5007 Similar messages will be suppressed.
+HDL-1007 : elaborate module ep_dbi_init_mux in ../../../../src/sgdma_ip/src/ep_dbi_init_mux.v(6)
+HDL-5007 WARNING: port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(14)
+HDL-1007 : port 'ecc_sbiterr' remains unconnected for this instance in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(14)
+HDL-1007 : port 'ecc_dbiterr' remains unconnected for this instance in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(14)
+HDL-1007 : elaborate module ep_cfg_rom in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(5)
+HDL-1007 : elaborate module PH1_LOGIC_ERAM(DATA_WIDTH_A=68,DATA_WIDTH_B=68,ADDR_WIDTH_A=7,ADDR_WIDTH_B=7,DATA_DEPTH_A=128,DATA_DEPTH_B=128,MODE="SP",INIT_FILE="pcie_ep_core.dat") in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(22)
+HDL-5007 WARNING: input port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(27)
+HDL-1007 : port '**' remains unconnected for this instance in encrypted_text(0)
+HDL-1007 : port '**' remains unconnected for this instance in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: port 'owe' is not connected on this instance in ../../../../src/sgdma_ip/ip/sfifo512x64.v(28)
+HDL-1007 : elaborate module sfifo512x64 in ../../../../src/sgdma_ip/ip/sfifo512x64.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_FIFO(DATA_WIDTH=64,ADDR_WIDTH=9) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(251)
+HDL-5007 WARNING: input port 'owe' is not connected on this instance in ../../../../src/sgdma_ip/ip/sfifo512x64.v(38)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: port 'owe' is not connected on this instance in ../../../../src/sgdma_ip/ip/sfifo512x128.v(28)
+HDL-1007 : elaborate module sfifo512x128 in ../../../../src/sgdma_ip/ip/sfifo512x128.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_FIFO(DATA_WIDTH=128,ADDR_WIDTH=9) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(251)
+HDL-5007 WARNING: input port 'owe' is not connected on this instance in ../../../../src/sgdma_ip/ip/sfifo512x128.v(38)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length ** for port '**' in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length ** for port '**' in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module safifo512x128 in ../../../../src/sgdma_ip/ip/safifo512x128.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_RAMFIFO(DATA_WIDTH=128,ADDR_WIDTH=9,SHOWAHEAD=1,IMPLEMENT="20K(FAST)") in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(351)
+HDL-1007 : elaborate module dram32x13 in ../../../../src/sgdma_ip/ip/dram32x13.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_DRAM(DATA_WIDTH_W=13,DATA_WIDTH_R=13,ADDR_WIDTH_W=5,ADDR_WIDTH_R=5,DATA_DEPTH_W=32,DATA_DEPTH_R=32) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(218)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_ip/ip/ram512x128.v(45)
+HDL-1007 : elaborate module ram512x128 in ../../../../src/sgdma_ip/ip/ram512x128.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_ERAM(DATA_WIDTH_A=128,DATA_WIDTH_B=128,ADDR_WIDTH_A=9,ADDR_WIDTH_B=9,DATA_DEPTH_A=512,DATA_DEPTH_B=512,MODE="PDPW",SSROVERCE="DISABLE",CLKMODE="SYNC",IMPLEMENT="20K(FAST)") in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(22)
+HDL-5007 WARNING: input port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_ip/ip/ram512x128.v(69)
+HDL-5007 WARNING: port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_ip/ip/ram512x27.v(45)
+HDL-1007 : elaborate module ram512x27 in ../../../../src/sgdma_ip/ip/ram512x27.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_ERAM(DATA_WIDTH_A=27,DATA_WIDTH_B=27,ADDR_WIDTH_A=9,ADDR_WIDTH_B=9,DATA_DEPTH_A=512,DATA_DEPTH_B=512,MODE="PDPW",SSROVERCE="DISABLE",CLKMODE="SYNC",IMPLEMENT="20K(FAST)") in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(22)
+HDL-5007 WARNING: input port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_ip/ip/ram512x27.v(69)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: port 'owe' is not connected on this instance in ../../../../src/sgdma_ip/ip/sfifo512x16.v(28)
+HDL-1007 : elaborate module sfifo512x16 in ../../../../src/sgdma_ip/ip/sfifo512x16.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_FIFO(DATA_WIDTH=16,ADDR_WIDTH=9) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(251)
+HDL-5007 WARNING: input port 'owe' is not connected on this instance in ../../../../src/sgdma_ip/ip/sfifo512x16.v(38)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length ** for port '**' in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-1007 : elaborate module ** in encrypted_text(0)
+HDL-5007 WARNING: input port 'phy_cr_para_clk' remains unconnected for this instance in ../../../../src/sgdma_ip/src/sgdma_subsys.v(462)
+HDL-1007 : elaborate module sgdma_app in ../../../../src/sgdma_app/src/sgdma_app.v(6)
+HDL-1007 : elaborate module app_tst_ctrl in ../../../../src/sgdma_app/src/app_tst_ctrl.v(2)
+HDL-1007 : elaborate module cfg_regrw in ../../../../src/sgdma_app/src/cfg_regrw.v(3)
+HDL-1007 : elaborate module usr_h2c0w in ../../../../src/sgdma_app/src/usr_h2c0w.v(4)
+HDL-1007 : elaborate module usr_c2h0r in ../../../../src/sgdma_app/src/usr_c2h0r.v(3)
+HDL-1007 : elaborate module usr_lp0rw in ../../../../src/sgdma_app/src/usr_lp0rw.v(2)
+HDL-1007 : elaborate module usr_regrw in ../../../../src/sgdma_app/src/usr_regrw.v(3)
+HDL-5007 WARNING: port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_app/ip/ram512x32.v(36)
+HDL-1007 : elaborate module ram512x32 in ../../../../src/sgdma_app/ip/ram512x32.v(5)
+HDL-1007 : elaborate module PH1_LOGIC_ERAM(DATA_WIDTH_A=32,DATA_WIDTH_B=32,ADDR_WIDTH_A=9,ADDR_WIDTH_B=9,DATA_DEPTH_A=512,DATA_DEPTH_B=512,MODE="PDPW",SSROVERCE="DISABLE",CLKMODE="SYNC",IMPLEMENT="20K(FAST)") in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(22)
+HDL-5007 WARNING: input port 'ecc_sbiterrinj' is not connected on this instance in ../../../../src/sgdma_app/ip/ram512x32.v(60)
+HDL-1007 : elaborate module dma_regrw in ../../../../src/sgdma_app/src/dma_regrw.v(3)
+HDL-1007 : port 'rst_cache' remains unconnected for this instance in ../../../../src/scan/python.v(580)
+HDL-5007 WARNING: port 'cache_rst' is not connected on this instance in ../../../../src/scan/python.v(580)
+HDL-1007 : port 'si_led' remains unconnected for this instance in ../../../../src/scan/python.v(732)
+HDL-1007 : port 'test' remains unconnected for this instance in ../../../../src/scan/python.v(732)
+HDL-1007 : port 'CISCLK7' remains unconnected for this instance in ../../../../src/scan/python.v(786)
+HDL-1007 : port 'CISCLK8' remains unconnected for this instance in ../../../../src/scan/python.v(786)
+HDL-1007 : port 'CISSI7' remains unconnected for this instance in ../../../../src/scan/python.v(786)
+HDL-1007 : port 'CISSI8' remains unconnected for this instance in ../../../../src/scan/python.v(786)
+HDL-1007 : port 'CISM7' remains unconnected for this instance in ../../../../src/scan/python.v(786)
+HDL-1007 : port 'CISM8' remains unconnected for this instance in ../../../../src/scan/python.v(786)
+HDL-1007 : elaborate module python in ../../../../src/scan/python.v(1)
+HDL-5007 WARNING: using initial value of 're' since it is never assigned in ../../../../src/scan/python.v(1900)
+HDL-1007 : elaborate module pll in ../../../../src/scan/al_ip/pll.v(26)
+HDL-1007 : elaborate module PH1_PHY_PLL(REFCLK_DIV=3,CLKC0_CPHASE=53,CLKC1_CPHASE=59,CLKC2_CPHASE=19,CLKC3_CPHASE=4,CLKC4_CPHASE=19,CLKC0_DIV=54,CLKC1_DIV=60,CLKC2_DIV=20,CLKC3_DIV=60,CLKC4_DIV=20,CLKC0_DUTY_INT=27,CLKC1_DUTY_INT=30,CLKC2_DUTY_INT=10,CLKC3_DUTY_INT=40,CLKC4_DUTY_INT=10,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",CLKC3_ENABLE="ENABLE",CLKC4_ENABLE="ENABLE",FIN="50.000",PLL_USR_RST="ENABLE",PLL_FEED_TYPE="EXTERNAL",LPF_RES=4,ICP_CUR=10,GMC_GAIN=0,CLKC3_DUTY50="DISABLE",SSC_RNGE=0) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(624)
+HDL-1007 : elaborate module pll3 in ../../../../src/scan/al_ip/pll3.v(23)
+HDL-1007 : elaborate module PH1_PHY_PLL(REFCLK_DIV=2,FBCLK_DIV=7,CLKC0_CPHASE=4,CLKC1_CPHASE=108,CLKC0_DIV=5,CLKC1_DIV=109,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=55,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FIN="50.000",PLL_USR_RST="ENABLE",PLL_FEED_TYPE="EXTERNAL",LPF_RES=3,ICP_CUR=11,GMC_GAIN=1,SSC_RNGE=0) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(624)
+HDL-1007 : switch to vhdl to elaborate module SYNC_ASYNC_RST in ../../../../src/scan/python.v(580)
+HDL-1007 : elaborate SYNC_ASYNC_RST(BEHAVIOR) in ../../../../src/scan/SYNC_ASYNC_RST.vhd(32)
+HDL-1007 : back to vlog to elaborate in ../../../../src/scan/python.v(580)
+HDL-1007 : elaborate module glitch_filter(GLITCH_FILTER_SIZE=16) in ../../../../src/scan/glitch_filter.v(1)
+HDL-1007 : elaborate module trigger in ../../../../src/scan/trigger.v(1)
+HDL-1007 : elaborate module gen_sp in ../../../../src/scan/gen_sp.v(1)
+HDL-1007 : elaborate module op in ../../../../src/scan/op.v(1)
+HDL-1007 : elaborate module xiaodou in ../../../../src/scan/xiaodou.v(1)
+HDL-1007 : elaborate module signal in ../../../../src/scan/signal.v(23)
+HDL-5007 WARNING: net 'over' does not have a driver in ../../../../src/scan/signal.v(67)
+HDL-5007 WARNING: net 'adj_en' does not have a driver in ../../../../src/scan/signal.v(71)
+HDL-1007 : elaborate module CISOUT in ../../../../src/scan/CISOUT.v(21)
+HDL-1007 : elaborate module cis_exposure in ../../../../src/scan/cis_exposure.v(1)
+HDL-1007 : elaborate module ADconfig in ../../../../src/scan/ADConfig.v(1)
+HDL-5007 WARNING: latch inferred for net 'addr[2]' in ../../../../src/scan/ADConfig.v(124)
+HDL-7007 CRITICAL-WARNING: 'adc_cfg_data' should be on the sensitivity list in ../../../../src/scan/ADConfig.v(184)
+HDL-7007 CRITICAL-WARNING: 'adc_cfg_data' should be on the sensitivity list in ../../../../src/scan/ADConfig.v(185)
+HDL-1007 : elaborate module WRADDATA in ../../../../src/scan/WRADDATA.v(1)
+HDL-1007 : port 'rdusedw' remains unconnected for this instance in ../../../../src/scan/DRAM_reverse.v(130)
+HDL-1007 : port 'wrusedw' remains unconnected for this instance in ../../../../src/scan/DRAM_reverse.v(130)
+HDL-1007 : port 'rdusedw' remains unconnected for this instance in ../../../../src/scan/DRAM_reverse.v(151)
+HDL-1007 : port 'wrusedw' remains unconnected for this instance in ../../../../src/scan/DRAM_reverse.v(151)
+HDL-1007 : elaborate module DRAM_reverse in ../../../../src/scan/DRAM_reverse.v(1)
+HDL-1007 : elaborate module fifo_generator_0 in ../../../../src/scan/al_ip/fifo_generator_0.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_RAMFIFO(ADDR_WIDTH=13) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(351)
+HDL-5007 WARNING: actual bit length 32 differs from formal bit length 12 for port 'wrdwfront' in ../../../../src/scan/python.v(1187)
+HDL-1007 : elaborate module DPRAM in ../../../../src/scan/al_ip/DPRAM.v(14)
+HDL-1007 : elaborate module PH1_LOGIC_ERAM(DATA_WIDTH_A=8,DATA_WIDTH_B=8,ADDR_WIDTH_A=12,ADDR_WIDTH_B=12,DATA_DEPTH_A=2600,DATA_DEPTH_B=2600,MODE="PDPW",SSROVERCE="DISABLE") in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(22)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addra' in ../../../../src/scan/python.v(1216)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addrb' in ../../../../src/scan/python.v(1220)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addra' in ../../../../src/scan/python.v(1229)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addrb' in ../../../../src/scan/python.v(1233)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addra' in ../../../../src/scan/python.v(1243)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addrb' in ../../../../src/scan/python.v(1247)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addra' in ../../../../src/scan/python.v(1256)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addrb' in ../../../../src/scan/python.v(1260)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addra' in ../../../../src/scan/python.v(1268)
+HDL-5007 WARNING: actual bit length 15 differs from formal bit length 12 for port 'addrb' in ../../../../src/scan/python.v(1272)
+HDL-5007 Similar messages will be suppressed.
+HDL-1007 : elaborate module ubus_top in ../../../../src/scan/localbus/ubus_top.v(1)
+HDL-1007 : elaborate module pll2 in ../../../../src/scan/al_ip/pll2.v(23)
+HDL-1007 : elaborate module PH1_PHY_PLL(FBCLK_DIV=2,CLKC0_CPHASE=11,CLKC1_CPHASE=24,CLKC0_DIV=12,CLKC1_DIV=25,CLKC0_DUTY_INT=6,CLKC1_DUTY_INT=13,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FIN="50.000",PLL_USR_RST="ENABLE",PLL_FEED_TYPE="EXTERNAL",INTPI=1,SSC_RNGE=0) in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(624)
+HDL-1007 : elaborate module local_bus_slve_cis in ../../../../src/scan/localbus/local_bus_slve_cis.v(3)
+HDL-1007 : elaborate module CRC4_D16 in ../../../../src/scan/localbus/CRC4_D16.v(7)
+HDL-1007 : elaborate module uart_2dsp in ../../../../src/scan/localbus/uart_2dsp_36mhz.v(1)
+HDL-5007 WARNING: net 'nd2reg_4[31]' does not have a driver in ../../../../src/scan/localbus/ubus_top.v(30)
+HDL-5007 WARNING: net 'nd2reg_5[31]' does not have a driver in ../../../../src/scan/localbus/ubus_top.v(31)
+HDL-1007 : elaborate module pwm in ../../../../src/scan/pwm.v(16)
+HDL-1007 : elaborate module down_clocking_even in ../../../../src/scan/down_clocking_even.v(5)
+HDL-1007 : elaborate module minus_one in ../../../../src/scan/minus_one.v(12)
+HDL-1007 : elaborate module down_clocking_odd in ../../../../src/scan/down_clocking_odd.v(5)
+HDL-1007 : elaborate module lvds_tx in ../../../../src/scan/lvds_tx.v(1)
+HDL-1007 : extracting RAM for identifier 'ram' in ../../../../src/scan/lvds_tx.v(52)
+HDL-1007 : elaborate module oddr(DEVICE="PH1") in ../../../../src/scan/lvds_tx.v(297)
+HDL-1007 : elaborate module PH1_LOGIC_ODDR in C:/Anlogic/TD5.6.2/arch/ph1_macro.v(10705)
+HDL-5007 WARNING: net 'serial_sft4[13]' does not have a driver in ../../../../src/scan/lvds_tx.v(60)
+HDL-5007 WARNING: actual bit length 5 differs from formal bit length 4 for port 'lvds_data' in ../../../../src/scan/python.v(1968)
+HDL-5007 WARNING: actual bit length 30 differs from formal bit length 24 for port 'rgb' in ../../../../src/scan/python.v(1977)
+HDL-5007 WARNING: net 'APB_M_0_rstn' does not have a driver in ../../../../src/scan/python.v(120)
+HDL-5007 WARNING: net 'en_frameset' does not have a driver in ../../../../src/scan/python.v(195)
+HDL-5007 WARNING: net 'error' does not have a driver in ../../../../src/scan/python.v(206)
+HDL-5007 WARNING: net 'i_ctrl0[7]' does not have a driver in ../../../../src/scan/python.v(251)
+HDL-5007 WARNING: net 'i_divisor0[15]' does not have a driver in ../../../../src/scan/python.v(252)
+HDL-5007 WARNING: net 'i_period0[15]' does not have a driver in ../../../../src/scan/python.v(253)
+HDL-5007 WARNING: net 'i_dc0[15]' does not have a driver in ../../../../src/scan/python.v(254)
+HDL-5007 Similar messages will be suppressed.
+HDL-5007 Similar messages will be suppressed.
+HDL-1007 : elaborate module swith in ../../../../src/swith/swith.v(2)
+HDL-1007 : elaborate module reg_config in ../../../../src/swith/reg_config.v(1)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-1200 : Current top model is pcie_scan
+HDL-1100 : Inferred 1 RAMs.
+RUN-1003 : finish command "elaborate -top pcie_scan" in  1.203357s wall, 1.156250s user + 0.046875s system = 1.203125s CPU (100.0%)
+
+RUN-1004 : used memory is 1248 MB, reserved memory is 1261 MB, peak memory is 1248 MB
+RUN-1002 : start command "export_db pcie_scan_elaborate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_adc ../../constraints/case_ep.adc"
+RUN-1002 : start command "set_pin_assignment  app_auxclk   LOCATION = U27; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  app_power_up_rst_n   LOCATION = L13; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment led0  LOCATION = J11; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_pin_assignment user_lnk_up  LOCATION = K11; IOSTANDARD = LVCMOS33;  "
+RUN-1002 : start command "set_inst_assignment u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst LOCATION = x0y160z0"
+RUN-1002 : start command "set_pin_assignment  SCK1   LOCATION = AF28; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  SDI1   LOCATION = AD29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  SEN1   LOCATION = AE29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  cisclk1   LOCATION = AB29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  in1[0]   LOCATION = Y29; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[10]   LOCATION = AH20; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[11]   LOCATION = AG20; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[12]   LOCATION = AE21; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[13]   LOCATION = AD21; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[14]   LOCATION = AG30; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[15]   LOCATION = AH30; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[1]   LOCATION = W29; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[2]   LOCATION = AA26; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[3]   LOCATION = Y26; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[4]   LOCATION = AA23; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[5]   LOCATION = AA22; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[6]   LOCATION = AB23; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[7]   LOCATION = AB22; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[8]   LOCATION = AC21; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  in1[9]   LOCATION = AC20; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  led1A_b   LOCATION = AB28; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led1A_g   LOCATION = AC29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led1A_r   LOCATION = AC30; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  mclk1   LOCATION = W27; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  si1   LOCATION = AB30; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  vsmp1   LOCATION = AE28; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  x0_p   LOCATION = C29; IOSTANDARD = LVDS25; "
+RUN-1002 : start command "set_pin_assignment  x1_p   LOCATION = G29; IOSTANDARD = LVDS25; "
+RUN-1002 : start command "set_pin_assignment  x2_p   LOCATION = B30; IOSTANDARD = LVDS25; "
+RUN-1002 : start command "set_pin_assignment  x3_p   LOCATION = C24; IOSTANDARD = LVDS25; "
+RUN-1002 : start command "set_pin_assignment  xclk_p   LOCATION = A16; IOSTANDARD = LVDS25; "
+RUN-1002 : start command "set_pin_assignment  ubus_rx   LOCATION = AJ27; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  ubus_tx   LOCATION = AH26; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO setups legality check.
+USR-6010 WARNING: ADC constraints: top model pin cisclk2 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cisclk3 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cisclk4 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cisclk5 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cisclk6 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cism1 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cism2 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cism3 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cism4 has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin cism5 has no constraint.
+USR-6010 Similar messages will be suppressed.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.2/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "pcie_scan"
+SYN-1012 : SanityCheck: Model "reg_config"
+SYN-1012 : SanityCheck: Model "sgdma_app"
+SYN-1012 : SanityCheck: Model "cfg_regrw"
+SYN-1012 : SanityCheck: Model "dma_regrw"
+SYN-1012 : SanityCheck: Model "app_tst_ctrl"
+SYN-1012 : SanityCheck: Model "usr_c2h0r"
+SYN-1012 : SanityCheck: Model "usr_h2c0w"
+SYN-1012 : SanityCheck: Model "usr_lp0rw"
+SYN-1012 : SanityCheck: Model "usr_regrw"
+SYN-1012 : SanityCheck: Model "ram512x32"
+SYN-1012 : SanityCheck: Model "sgdma_subsys"
+SYN-1012 : SanityCheck: Model "pcie_ep_core"
+SYN-1012 : SanityCheck: Model "ep_dbi_init_mux"
+SYN-1012 : SanityCheck: Model "ep_cfg_rom"
+SYN-1012 : SanityCheck: Model "sgdma_ip"
+SYN-1012 : SanityCheck: Model "app_dmarw"
+SYN-1012 : SanityCheck: Model "drv_usrrw"
+SYN-1012 : SanityCheck: Model "dscpr_cal"
+SYN-1012 : SanityCheck: Model "sfifo512x64"
+SYN-1012 : SanityCheck: Model "dscpw_cal"
+SYN-1012 : SanityCheck: Model "excep_hndl"
+SYN-1012 : SanityCheck: Model "irq_hndl"
+SYN-1012 : SanityCheck: Model "sfifo512x16"
+SYN-1012 : SanityCheck: Model "mrd_arb"
+SYN-1012 : SanityCheck: Model "mrd_axi4s0"
+SYN-1012 : SanityCheck: Model "mrd_relor"
+SYN-1012 : SanityCheck: Model "ram512x128"
+SYN-1012 : SanityCheck: Model "ram512x27"
+SYN-1012 : SanityCheck: Model "mrd_rx"
+SYN-1012 : SanityCheck: Model "dram32x13"
+SYN-1012 : SanityCheck: Model "mrd_schd"
+SYN-1012 : SanityCheck: Model "mrd_tlp"
+SYN-1012 : SanityCheck: Model "mwr_arb"
+SYN-1012 : SanityCheck: Model "mwr_axi4s0"
+SYN-1012 : SanityCheck: Model "safifo512x128"
+SYN-1012 : SanityCheck: Model "mwr_tlp"
+SYN-1012 : SanityCheck: Model "pcie_cfgrw"
+SYN-1012 : SanityCheck: Model "perf_stat"
+SYN-1012 : SanityCheck: Model "rdscp_cal"
+SYN-1012 : SanityCheck: Model "sfifo512x128"
+SYN-1012 : SanityCheck: Model "sgdma_ctrl"
+SYN-1012 : SanityCheck: Model "sgdma_regrw"
+SYN-1012 : SanityCheck: Model "wdscp_cal"
+SYN-1012 : SanityCheck: Model "status_sig"
+SYN-1012 : SanityCheck: Model "sys_ctrl"
+SYN-1012 : SanityCheck: Model "sys_pll"
+SYN-1012 : SanityCheck: Model "swith"
+SYN-1012 : SanityCheck: Model "python"
+SYN-1012 : SanityCheck: Model "CISOUT"
+SYN-1012 : SanityCheck: Model "DPRAM"
+SYN-1012 : SanityCheck: Model "DRAM_reverse"
+SYN-1012 : SanityCheck: Model "fifo_generator_0"
+SYN-1012 : SanityCheck: Model "SYNC_ASYNC_RST"
+SYN-1012 : SanityCheck: Model "WRADDATA"
+SYN-1012 : SanityCheck: Model "gen_sp"
+SYN-1012 : SanityCheck: Model "op"
+SYN-1012 : SanityCheck: Model "signal"
+SYN-1012 : SanityCheck: Model "trigger"
+SYN-1012 : SanityCheck: Model "pwm"
+SYN-1012 : SanityCheck: Model "down_clocking_even"
+SYN-1012 : SanityCheck: Model "minus_one"
+SYN-1012 : SanityCheck: Model "down_clocking_odd"
+SYN-1012 : SanityCheck: Model "lvds_tx"
+SYN-1012 : SanityCheck: Model "oddr(DEVICE="PH1")"
+SYN-1012 : SanityCheck: Model "ADconfig"
+SYN-1012 : SanityCheck: Model "cis_exposure"
+SYN-1012 : SanityCheck: Model "glitch_filter(GLITCH_FILTER_SIZE=16)"
+SYN-1012 : SanityCheck: Model "pll"
+SYN-1012 : SanityCheck: Model "pll3"
+SYN-1012 : SanityCheck: Model "ubus_top"
+SYN-1012 : SanityCheck: Model "local_bus_slve_cis"
+SYN-1012 : SanityCheck: Model "CRC4_D16"
+SYN-1012 : SanityCheck: Model "uart_2dsp"
+SYN-1012 : SanityCheck: Model "pll2"
+SYN-1012 : SanityCheck: Model "xiaodou"
+SYN-1043 : Mark pll2 as IO macro for instance bufg_feedback
+SYN-1043 : Mark ubus_top as IO macro for instance u_pll2
+SYN-1043 : Mark pll3 as IO macro for instance bufg_feedback
+SYN-1043 : Mark pll as IO macro for instance bufg_feedback
+SYN-1043 : Mark ADconfig as IO macro for instance SDI_i
+SYN-1043 : Mark oddr(DEVICE="PH1") as IO macro for instance u_oddr
+SYN-1043 : Mark lvds_tx as IO macro for instance u0_oddr
+SYN-1043 : Mark python as IO macro for instance u1
+SYN-1043 : Mark sys_pll as IO macro for instance bufg_feedback
+SYN-1043 : Mark sys_ctrl as IO macro for instance u_bufg_clk
+SYN-1043 : Mark sgdma_ctrl as IO macro for instance u_bufg_crst
+SYN-1043 : Mark sgdma_ip as IO macro for instance u_sgdma_ctrl
+SYN-1043 : Mark sgdma_subsys as IO macro for instance app_auxclk_bufg
+SYN-1011 : Flatten model pcie_scan
+SYN-1032 : 46445/8347 useful/useless nets, 19564/2339 useful/useless insts
+SYN-1001 : Bypass 2 mux instances
+SYN-1001 : Optimize 131 less-than instances
+SYN-1016 : Merged 29651 instances.
+SYN-1032 : 38613/9603 useful/useless nets, 14105/3634 useful/useless insts
+SYN-1016 : Merged 1094 instances.
+SYN-5015 WARNING: Found latch in "pcie_scan", name: "uut/uADConfig1/reg1_syn_2", d: "uut/uADConfig1/cnt_sdi[0]", q: "uut/uADConfig1/addr[0]" // ../../../../src/scan/ADConfig.v(124)
+SYN-5015 WARNING: Found latch in "pcie_scan", name: "uut/uADConfig1/reg1_syn_3", d: "uut/uADConfig1/cnt_sdi_b7[1]", q: "uut/uADConfig1/addr[1]" // ../../../../src/scan/ADConfig.v(124)
+SYN-5015 WARNING: Found latch in "pcie_scan", name: "uut/uADConfig1/reg1_syn_4", d: "uut/uADConfig1/addr_b[2]", q: "uut/uADConfig1/addr[2]" // ../../../../src/scan/ADConfig.v(124)
+SYN-1013 : Convert 3 latches to dff
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_app/u_usr_regrw/u_ram512x32/inst" in ../../../../src/sgdma_app/ip/ram512x32.v(60) / pin "ecc_dbiterrinj"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_app/u_usr_regrw/u_ram512x32/inst" in ../../../../src/sgdma_app/ip/ram512x32.v(60) / pin "ecc_sbiterrinj"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_ep_dbi_init_mux/reg8_syn_47" in ../../../../src/sgdma_ip/src/ep_dbi_init_mux.v(101) / pin "d"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_ep_dbi_init_mux/u_pcie_cfg_rom/inst" in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(27) / pin "ecc_dbiterrinj"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_ep_dbi_init_mux/u_pcie_cfg_rom/inst" in ../../../../src/sgdma_ip/ip/pcie_cfg_rom.v(27) / pin "ecc_sbiterrinj"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_sgdma_ip/u_dscpr_cal/u_dscpr_sfifo512x64/fifo_inst" in ../../../../src/sgdma_ip/ip/sfifo512x64.v(38) / pin "ecc_dbiterrinj"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_sgdma_ip/u_dscpr_cal/u_dscpr_sfifo512x64/fifo_inst" in ../../../../src/sgdma_ip/ip/sfifo512x64.v(38) / pin "ecc_sbiterrinj"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_sgdma_ip/u_dscpr_cal/u_dscpr_sfifo512x64/fifo_inst" in ../../../../src/sgdma_ip/ip/sfifo512x64.v(38) / pin "ore"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_sgdma_ip/u_dscpr_cal/u_dscpr_sfifo512x64/fifo_inst" in ../../../../src/sgdma_ip/ip/sfifo512x64.v(38) / pin "owe"
+SYN-5011 WARNING: Undriven pin: model "pcie_scan" / inst "u_sgdma_subsys/u_sgdma_ip/u_dscpw_cal/u_dscpw_sfifo512x64/fifo_inst" in ../../../../src/sgdma_ip/ip/sfifo512x64.v(38) / pin "ecc_dbiterrinj"
+SYN-5011 Similar messages will be suppressed.
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_ep_core/phy_cr_para_clk" in ../../../../src/sgdma_ip/ip/pcie_ep_core.v(351)
+SYN-5014 WARNING: the net's pin: pin "phy0_cr_para_clk" in ../../../../src/sgdma_ip/ip/pcie_ep_core.v(691)
+SYN-5014 WARNING: the net's pin: pin "phy1_cr_para_clk" in ../../../../src/sgdma_ip/ip/pcie_ep_core.v(691)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[127]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[126]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[125]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[124]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[123]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[122]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[121]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[120]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[119]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[118]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[117]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[116]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[115]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[114]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[113]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[112]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[111]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[110]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[109]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[108]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[107]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[106]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[105]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[104]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[103]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[102]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[101]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[100]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[99]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[98]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[97]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[96]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[95]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[94]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[93]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[92]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[91]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[90]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[89]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[88]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[87]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[86]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[85]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[84]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[83]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[82]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[81]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[80]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[79]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[78]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[77]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[76]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[75]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[74]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[73]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[72]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[71]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[70]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[69]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[68]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[67]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[66]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[65]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[64]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[63]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[62]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[61]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[60]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[59]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[58]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[57]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[56]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[55]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[54]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[53]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[52]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[51]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[50]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[49]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[48]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[47]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[46]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[45]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[44]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[43]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[42]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[41]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[40]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[39]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[38]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[37]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[36]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[35]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[34]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[33]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[32]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[31]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[30]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[29]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[28]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[27]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[26]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[25]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[24]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[23]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[22]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[21]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[20]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[19]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[18]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[17]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[16]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[15]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[14]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[13]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[12]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[11]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[10]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[9]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[8]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[7]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[6]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[5]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[4]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[3]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[2]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[1]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/client1_tlp_data[0]_syn_3" in encrypted_text(0)
+SYN-5014 WARNING: the net's pin: pin "i" in encrypted_text(0)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/line_cnt[0]" in ../../../../src/scan/python.v(260)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../../../src/scan/python.v(1822)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/en_frameset" in ../../../../src/scan/python.v(195)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(766)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../../src/scan/python.v(1798)
+SYN-5014 Similar messages will be suppressed.
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[31]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[30]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[29]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[28]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[27]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[26]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[25]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[24]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[23]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[22]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[21]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[20]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[19]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[18]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[17]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[16]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[15]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[14]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[13]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[12]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[11]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[10]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[9]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[8]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[7]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[6]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[5]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[4]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[3]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[2]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[1]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_4[0]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(18)
+SYN-5014 WARNING: the net's pin: pin "i12" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[31]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[30]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[29]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[28]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[27]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[26]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[25]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[24]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[23]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[22]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[21]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[20]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[19]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[18]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[17]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[16]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[15]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[14]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[13]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[12]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[11]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[10]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[9]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[8]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[7]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[6]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[5]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[4]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[3]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[2]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[1]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5013 WARNING: Undriven net: model "pcie_scan" / net "uut/u_ubus_top/u_local_bus_slve_cis/nd2reg_5[0]" in ../../../../src/scan/localbus/local_bus_slve_cis.v(19)
+SYN-5014 WARNING: the net's pin: pin "i11" in ../../../../src/scan/localbus/local_bus_slve_cis.v(789)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 37224/583 useful/useless nets, 34066/1004 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1032 : 36839/385 useful/useless nets, 33778/288 useful/useless insts
+SYN-1017 : Remove 16 const input seq instances
+SYN-1002 :     u_sgdma_subsys/u_sgdma_ip/u_irq_hndl/reg3_syn_4
+SYN-1002 :     uut/reg0_syn_10
+SYN-1002 :     uut/reg0_syn_12
+SYN-1002 :     uut/reg12_syn_10
+SYN-1002 :     uut/DRAM_reverse/frontfull_reg
+SYN-1002 :     uut/WRADDATA/reg1_syn_4
+SYN-1002 :     uut/trigger/reg2_syn_15
+SYN-1002 :     uut/u_ubus_top/u_local_bus_slve_cis/u_uart_2dsp/reg5_syn_15
+SYN-1002 :     uut/reg1_syn_10
+SYN-1002 :     uut/reg1_syn_12
+SYN-1002 :     uut/DRAM_reverse/reg0_syn_5
+SYN-1002 :     uut/WRADDATA/reg2_syn_12
+SYN-1002 :     uut/DRAM_reverse/reg1_syn_5
+SYN-1002 :     uut/WRADDATA/reg3_syn_12
+SYN-1002 :     uut/DRAM_reverse/reg2_syn_5
+SYN-1002 :     uut/DRAM_reverse/reg3_syn_5
+SYN-1018 : Transformed 144 mux instances.
+SYN-1019 : Optimized 166 mux instances.
+SYN-1021 : Optimized 188 onehot mux instances.
+SYN-1020 : Optimized 1650 distributor mux.
+SYN-1001 : Optimize 15 less-than instances
+SYN-1019 : Optimized 26 mux instances.
+SYN-1016 : Merged 5388 instances.
+SYN-1015 : Optimize round 1, 17972 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 11 inv instances.
+SYN-1032 : 33337/672 useful/useless nets, 30391/4314 useful/useless insts
+SYN-1017 : Remove 6 const input seq instances
+SYN-1002 :     u_sgdma_app/u_tst_ctrl/cfg_regrw_run_reg
+SYN-1002 :     u_sgdma_app/u_usr_h2c0w/reg2_syn_2
+SYN-1002 :     u_sgdma_subsys/u_sgdma_ip/u_mrd_tlp/reg0_syn_2
+SYN-1002 :     u_sgdma_subsys/u_sgdma_ip/u_mwr_tlp/reg0_syn_2
+SYN-1002 :     uut/signal/reg7_syn_5
+SYN-1002 :     uut/trigger/reg4_syn_15
+SYN-1019 : Optimized 36 mux instances.
+SYN-1019 : Optimized 1 mux instances.
+SYN-1016 : Merged 4 instances.
+SYN-1015 : Optimize round 2, 5912 better
+SYN-1032 : 33193/77 useful/useless nets, 30330/3 useful/useless insts
+SYN-3004 : Optimized 17 const0 DFF(s)
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-3004 : Optimized 2 const0 DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3004 : Optimized 5 const0 DFF(s)
+SYN-1032 : 33106/87 useful/useless nets, 30266/37 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1032 : 33103/0 useful/useless nets, 30263/1 useful/useless insts
+SYN-1019 : Optimized 1 mux instances.
+SYN-1020 : Optimized 5 distributor mux.
+SYN-1016 : Merged 15 instances.
+SYN-1015 : Optimize round 1, 55 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 33088/1 useful/useless nets, 30249/5 useful/useless insts
+SYN-1015 : Optimize round 2, 5 better
+SYN-1014 : Optimize round 3
+SYN-1015 : Optimize round 3, 0 better
+RUN-1003 : finish command "optimize_rtl" in  37.916359s wall, 36.453125s user + 1.421875s system = 37.875000s CPU (99.9%)
+
+RUN-1004 : used memory is 1329 MB, reserved memory is 1342 MB, peak memory is 1336 MB
+RUN-1002 : start command "report_area -file pcie_scan_rtl.area"
+RUN-1001 : standard
+***Report Model: pcie_scan Device: PH1A400SFG900***
+
+IO Statistics
+#IO                       105
+  #input                   45
+  #output                  59
+  #inout                    1
+
+Gate Statistics
+#Basic gates            15598
+  #and                   3709
+  #nand                     0
+  #or                    3259
+  #nor                      0
+  #xor                     60
+  #xnor                     0
+  #buf                      0
+  #not                    461
+  #bufif1                   1
+  #MX21                  1315
+  #FADD                     0
+  #DFF                   6793
+  #LATCH                    0
+#MACRO_ADD                349
+#MACRO_EQ                 273
+#MACRO_MULT                 3
+#MACRO_MUX               7385
+#MACRO_OTHERS              34
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------+
+|Instance                     |Module             |gates  |seq    |macros |
++-------------------------------------------------------------------------+
+|top                          |pcie_scan          |8805   |6793   |659    |
+|  u_reg_config               |reg_config         |71     |133    |10     |
+|  u_sgdma_app                |sgdma_app          |251    |439    |27     |
+|    u_cfg_regrw              |cfg_regrw          |13     |68     |0      |
+|    u_tst_ctrl               |app_tst_ctrl       |4      |14     |3      |
+|    u_usr_c2h0r              |usr_c2h0r          |133    |140    |2      |
+|    u_usr_h2c0w              |usr_h2c0w          |72     |114    |19     |
+|    u_usr_lp0rw              |usr_lp0rw          |3      |0      |0      |
+|    u_usr_regrw              |usr_regrw          |26     |103    |3      |
+|      u_ram512x32            |ram512x32          |0      |0      |1      |
+|  u_sgdma_subsys             |sgdma_subsys       |7140   |4284   |301    |
+|    u_ep_core                |pcie_ep_core       |0      |0      |0      |
+|    u_ep_dbi_init_mux        |ep_dbi_init_mux    |698    |195    |11     |
+|      u_pcie_cfg_rom         |ep_cfg_rom         |0      |0      |1      |
+|    u_sgdma_ip               |sgdma_ip           |6424   |4013   |275    |
+|      u_drv_usrrw            |drv_usrrw          |13     |101    |0      |
+|      u_dscpr_cal            |dscpr_cal          |113    |134    |11     |
+|        u_dscpr_sfifo512x64  |sfifo512x64        |0      |0      |1      |
+|      u_dscpw_cal            |dscpw_cal          |103    |134    |11     |
+|        u_dscpw_sfifo512x64  |sfifo512x64        |0      |0      |1      |
+|      u_excep_hndl           |excep_hndl         |47     |4      |0      |
+|      u_irq_hndl             |irq_hndl           |101    |21     |1      |
+|        u_irq_sfifo512x16    |sfifo512x16        |0      |0      |1      |
+|      u_mrd_arb              |mrd_arb            |620    |98     |5      |
+|      u_mrd_axi4s0           |mrd_axi4s0         |62     |453    |11     |
+|      u_mrd_relor            |mrd_relor          |84     |157    |44     |
+|        u_mrd_ram512x128     |ram512x128         |30     |0      |1      |
+|        u_mrd_ram512x27      |ram512x27          |0      |0      |1      |
+|      u_mrd_rx               |mrd_rx             |33     |469    |4      |
+|        u_mrd_dram           |dram32x13          |0      |0      |1      |
+|      u_mrd_schd             |mrd_schd           |39     |22     |9      |
+|      u_mrd_tlp              |mrd_tlp            |47     |139    |3      |
+|      u_mwr_arb              |mwr_arb            |202    |95     |5      |
+|      u_mwr_axi4s0           |mwr_axi4s0         |169    |374    |17     |
+|        u_mwr_dram32x13      |dram32x13          |0      |0      |1      |
+|        u_mwr_safifo512x128  |safifo512x128      |0      |0      |1      |
+|      u_mwr_tlp              |mwr_tlp            |57     |146    |10     |
+|      u_pcie_cfgrw           |pcie_cfgrw         |82     |110    |6      |
+|      u_perf_stat            |perf_stat          |54     |246    |6      |
+|      u_rdscp_cal            |rdscp_cal          |218    |311    |21     |
+|        u_rdscp_sfifo512x128 |sfifo512x128       |1      |0      |1      |
+|      u_sgdma_ctrl           |sgdma_ctrl         |66     |40     |4      |
+|      u_sgdma_regrw          |sgdma_regrw        |4088   |633    |86     |
+|      u_wdscp_cal            |wdscp_cal          |215    |326    |21     |
+|        u_wdscp_sfifo512x128 |sfifo512x128       |0      |0      |1      |
+|    u_status_sig             |status_sig         |0      |23     |1      |
+|    u_sys_ctrl               |sys_ctrl           |18     |53     |9      |
+|      u_sys_pll              |sys_pll            |0      |0      |1      |
+|  u_swith                    |swith              |266    |388    |4      |
+|  uut                        |python             |1077   |1549   |317    |
+|    CISOUT                   |CISOUT             |1      |0      |0      |
+|    DPRAMA1                  |DPRAM              |0      |0      |1      |
+|    DPRAMA2                  |DPRAM              |0      |0      |1      |
+|    DPRAMA3                  |DPRAM              |0      |0      |1      |
+|    DPRAMA4                  |DPRAM              |0      |0      |1      |
+|    DPRAMB1                  |DPRAM              |0      |0      |1      |
+|    DPRAMB2                  |DPRAM              |0      |0      |1      |
+|    DPRAMB3                  |DPRAM              |0      |0      |1      |
+|    DPRAMB4                  |DPRAM              |0      |0      |1      |
+|    DRAM_reverse             |DRAM_reverse       |189    |237    |22     |
+|      fifo0                  |fifo_generator_0   |0      |0      |1      |
+|    SYNC_ASYNC_RST           |SYNC_ASYNC_RST     |0      |2      |0      |
+|    WRADDATA                 |WRADDATA           |68     |196    |21     |
+|    gen_sp                   |gen_sp             |12     |38     |6      |
+|    op                       |op                 |3      |3      |0      |
+|    signal                   |signal             |59     |97     |16     |
+|    trigger                  |trigger            |1      |20     |6      |
+|    uADConfig1               |ADconfig           |64     |75     |20     |
+|    u_cis_exposure1          |cis_exposure       |168    |79     |98     |
+|    u_cis_exposure2          |cis_exposure       |127    |65     |69     |
+|    u_pll                    |pll                |0      |0      |1      |
+|    u_pll3                   |pll3               |0      |0      |1      |
+|    u_ubus_top               |ubus_top           |339    |591    |44     |
+|      u_local_bus_slve_cis   |local_bus_slve_cis |339    |591    |43     |
+|        u1                   |CRC4_D16           |30     |0      |0      |
+|        u2                   |CRC4_D16           |30     |0      |0      |
+|        u_uart_2dsp          |uart_2dsp          |124    |82     |29     |
+|      u_pll2                 |pll2               |0      |0      |1      |
++-------------------------------------------------------------------------+
+
+RUN-1002 : start command "export_db pcie_scan_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1003 : finish command "export_db pcie_scan_rtl.db" in  1.533968s wall, 2.421875s user + 0.031250s system = 2.453125s CPU (159.9%)
+
+RUN-1004 : used memory is 1350 MB, reserved memory is 1364 MB, peak memory is 1404 MB
+RUN-1002 : start command "read_sdc ../../constraints/case_ep.sdc"
+RUN-1002 : start command "get_ports app_auxclk"
+RUN-1002 : start command "create_clock  -period 10 -waveform 0 5 -name aux_clk"
+RUN-1102 : create_clock: clock name: aux_clk, type: 0, period: 10000, rise: 0, fall: 5000.
+RUN-1002 : start command "get_pins u_sgdma_subsys/u_ep_core/uep_PH1_PHY_PCIE.core_clk"
+RUN-1002 : start command "create_clock -name core_clk -period 8 -waveform 0 1 "
+RUN-1102 : create_clock: clock name: core_clk, type: 0, period: 8000, rise: 0, fall: 1000.
+RUN-1002 : start command "get_pins u_sgdma_subsys/u_ep_core/uep_PH1_PHY_PCIE.core_clk"
+RUN-1002 : start command "get_pins u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst.clkc[1]"
+RUN-1002 : start command "create_generated_clock -name pll_out_clk -source  -master_clock core_clk -divide_by 1 "
+RUN-1002 : start command "get_clocks aux_clk"
+RUN-1002 : start command "get_clocks pll_out_clk"
+RUN-1002 : start command "set_false_path -from  -to "
+RUN-1002 : start command "get_clocks pll_out_clk"
+RUN-1002 : start command "get_clocks aux_clk"
+RUN-1002 : start command "set_false_path -from  -to "
+RUN-1002 : start command "get_clocks pll_out_clk"
+RUN-1002 : start command "set_clock_latency -clock  -max -source -0.11"
+USR-1002 : set_clock_latency -help -clock <list> -rise -fall -early -late -max -min -source delay target
+RUN-1002 : start command "get_clocks pll_out_clk"
+RUN-1002 : start command "set_clock_latency -clock  -min -source -0.03"
+USR-1002 : set_clock_latency -help -clock <list> -rise -fall -early -late -max -min -source delay target
+RUN-1002 : start command "optimize_gate -maparea pcie_scan_gate.area"
+RUN-1001 : Open license file C:/Anlogic/TD5.6.2/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |    off     |       off        |        
+RUN-1001 :        map_sim_model        |    off     |       off        |        
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2001 : Map 105 IOs to PADs
+SYN-1032 : 33171/0 useful/useless nets, 30336/1 useful/useless insts
+RUN-1002 : start command "update_pll_param -module pcie_scan"
+SYN-2501 : Processed 5 LOGIC_BUF instances.
+SYN-2501 : 8 BUFG to GCLK
+SYN-2541 : Logic Ram FIFO "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/u_mwr_safifo512x128/logic_ramfifo"
+SYN-2541 : Logic Ram FIFO "uut/DRAM_reverse/fifo0/logic_ramfifo"
+SYN-2593 : bram inst: u_sgdma_subsys/u_ep_dbi_init_mux/u_pcie_cfg_rom/inst will be optimized to a new one with A-width 50 due to unused data out
+SYN-2541 : Reading BRAM "u_sgdma_subsys/u_ep_dbi_init_mux/u_pcie_cfg_rom/inst_dup_1" init file "C:\Users\huagao\Desktop\feiten_pcie\FPGA_RACE\pcie_scan\src\sgdma_ip\ip\pcie_ep_core.dat"
+SYN-2543 : Parsing BIN init file
+SYN-2512 : LOGIC BRAM "u_sgdma_app/u_usr_regrw/u_ram512x32/inst"
+SYN-2512 : LOGIC BRAM "u_sgdma_subsys/u_ep_dbi_init_mux/u_pcie_cfg_rom/inst"
+SYN-2512 : LOGIC BRAM "u_sgdma_subsys/u_sgdma_ip/u_mrd_relor/u_mrd_ram512x128/inst"
+SYN-2512 : LOGIC BRAM "u_sgdma_subsys/u_sgdma_ip/u_mrd_relor/u_mrd_ram512x27/inst"
+SYN-2512 : LOGIC BRAM "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/u_mwr_safifo512x128/logic_ramfifo_syn_540"
+SYN-2512 : LOGIC BRAM "uut/DPRAMA1/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMA2/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMA3/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMA4/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMB1/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMB2/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMB3/inst"
+SYN-2512 : LOGIC BRAM "uut/DPRAMB4/inst"
+SYN-2512 : LOGIC BRAM "uut/DRAM_reverse/fifo0/logic_ramfifo_syn_390"
+SYN-2541 : Write 512x64, read 512x64.
+SYN-2541 : Write 512x64, read 512x64.
+SYN-2541 : Write 512x16, read 512x16.
+SYN-2541 : Write 512x128, read 512x128.
+SYN-2541 : Write 512x128, read 512x128.
+SYN-2531 : Dram(u_sgdma_subsys/u_sgdma_ip/u_mrd_rx/u_mrd_dram/dram) write 32x13, read 32x13
+SYN-2531 : Dram(u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/u_mwr_dram32x13/dram) write 32x13, read 32x13
+SYN-2571 : Map 3 macro multiplier
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 35317/975 useful/useless nets, 32292/531 useful/useless insts
+SYN-1016 : Merged 18 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 1246 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-2571 : Map 3 macro multiplier
+SYN-2571 : Map 3 macro multiplier
+SYN-1019 : Optimized 2 mux instances.
+SYN-1001 : Throwback 484 control mux instances
+SYN-1001 : Clone 4 adder instances
+SYN-1001 : Convert 5 adder
+RUN-1002 : start command "start_timer -prepack"
+USR-1006 : Generating FPGA-IP Autogen constraints ...
+RUN-1003 : finish command "start_timer -prepack" in  1.731577s wall, 1.703125s user + 0.031250s system = 1.734375s CPU (100.2%)
+
+RUN-1004 : used memory is 1653 MB, reserved memory is 1677 MB, peak memory is 1653 MB
+SYN-1001 : Optimize 1 less-than instances
+SYN-2501 : Optimize round 1
+SYN-1032 : 39600/254 useful/useless nets, 36577/4 useful/useless insts
+SYN-1016 : Merged 1915 instances.
+SYN-2501 : Optimize round 1, 4817 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-1030 : Map 66 macro adder
+SYN-1031 : Map 9 macro less-than
+SYN-2501 : Map 273 macro adder
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 15 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 3 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 3 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 35 ROM instances
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_113" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_114" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_115" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_116" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_117" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_118" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_119" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_120" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_121" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_122" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_123" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_124" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_125" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_126" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_127" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux3_syn_128" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_1" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_2" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_3" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_4" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_5" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_6" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_7" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_8" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_9" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_10" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_11" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_12" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_13" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_14" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_15" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_16" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_17" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_18" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_19" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_20" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_21" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_22" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_23" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_24" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_25" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_26" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_27" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_28" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_29" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_30" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_31" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_32" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_33" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_34" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_35" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_36" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_37" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_38" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_39" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_40" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_41" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_42" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_43" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_44" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_45" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_46" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_47" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_48" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_49" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_50" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_51" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_52" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_53" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_54" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_55" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_56" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_57" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_58" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_59" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_60" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_61" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_62" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_63" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_64" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_65" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_66" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_67" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_68" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_69" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_70" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_71" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_72" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_73" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_74" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_75" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_76" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_77" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_78" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_79" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_80" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_81" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_82" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_83" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_84" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_85" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_86" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_87" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_88" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_89" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_90" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_91" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_92" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_93" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_94" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_95" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_96" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_97" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_98" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_99" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_100" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_101" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_102" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_103" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_104" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_105" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_106" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_107" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_108" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_109" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_110" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_111" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_112" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_113" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_114" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_115" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_116" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_117" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_118" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_119" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_120" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_121" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_122" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_123" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_124" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_125" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_126" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_127" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_axi4s0/mux6_syn_128" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_relor/mux4_syn_1" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_relor/mux4_syn_2" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mrd_relor/mux4_syn_3" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_1" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_2" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_3" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_4" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_5" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_6" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_7" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_8" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_9" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_10" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_11" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_12" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_13" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_14" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_15" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_16" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_17" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_18" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_19" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_20" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_21" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_22" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_23" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_24" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_25" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_26" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_27" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_28" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_29" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_30" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_31" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_32" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_33" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_34" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_35" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_36" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_37" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_38" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_39" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_40" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_41" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_42" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_43" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_44" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_45" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_46" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_47" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_48" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_49" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_50" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_51" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_52" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_53" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_54" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_55" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_56" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_57" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_58" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_59" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_60" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_61" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_62" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_63" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_64" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_65" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_66" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_67" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_68" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_69" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_70" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_71" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_72" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_73" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_74" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_75" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_76" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_77" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_78" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_79" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_80" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_81" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_82" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_83" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_84" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_85" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_86" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_87" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_88" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_89" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_90" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_91" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_92" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_93" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_94" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_95" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_96" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_97" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_98" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_99" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_100" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_101" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_102" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_103" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_104" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_105" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_106" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_107" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_108" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_109" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_110" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_111" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_112" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_113" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_114" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_115" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_116" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_117" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_118" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_119" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_120" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_121" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_122" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_123" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_124" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_125" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_126" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_127" with ph1 mux
+SYN-3007 : Map mux "u_sgdma_subsys/u_sgdma_ip/u_mwr_axi4s0/mux18_syn_128" with ph1 mux
+SYN-3007 : Map mux "uut/uADConfig1/mux0" with ph1 mux
+SYN-1019 : Optimized 762 mux instances.
+SYN-1016 : Merged 2321 instances.
+SYN-1032 : 42872/276 useful/useless nets, 39813/7 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model pcie_scan.
+TMR-2506 : Build timing graph completely. Port num: 63, tpin num: 136749, tnet num: 42872, tinst num: 39812, tnode num: 167899, tedge num: 198706.
+TMR-2508 : Levelizing timing graph completed, there are 203 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1003 : finish command "start_timer -prepack" in  1.222158s wall, 1.218750s user + 0.000000s system = 1.218750s CPU (99.7%)
+
+RUN-1004 : used memory is 1596 MB, reserved memory is 1677 MB, peak memory is 2054 MB
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 42872 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 3 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 883 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=6, #lut = 8364 (4.26), #lev = 13 (2.64)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=6, #lut = 8050 (4.33), #lev = 13 (2.56)
+SYN-3001 : Logic optimization runtime opt =   2.20 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 22964 instances into 8079 LUTs, name keeping = 75%.
+SYN-3001 : Mapper removed 4 lut buffers
+RUN-1002 : start command "report_area -file pcie_scan_gate.area"
+RUN-1001 : standard
+***Report Model: pcie_scan Device: PH1A400SFG900***
+
+IO Statistics
+#IO                       105
+  #input                   45
+  #output                  59
+  #inout                    1
+
+Utilization Statistics
+#lut                    10289
+  #lut1                    30
+  #lut2                   977
+  #lut3                  1600
+  #lut4                  1852
+  #lut5                  1352
+  #lut6                  2916
+  #1-bit adder           1562
+#reg                     7193   out of 463360    1.55%
+  #dff                   7193
+  #latch                    0
+#f7mux                    424   out of 115840    0.37%
+#f8mux                    276   out of  57920    0.48%
+#dsp                        0   out of    840    0.00%
+#eram                      33   out of    914    3.61%
+  #eram20k                 20
+  #fifo20k                 13
+#dram                       2
+#pad                       87   out of    501   17.37%
+  #ireg                     0
+  #oreg                     0
+  #treg                     0
+#pll                        4   out of     20   20.00%
+#pcie                       1   out of      1  100.00%
+#serdes                     2   out of      8   25.00%
+
+Report Hierarchy Area:
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                     |Module             |lut     |ripple  |seq     |eram    |dsp     |dram    |shifter |f7mux   |f8mux   |pll     |serdes  |pcie    |ddr     |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                          |pcie_scan          |8727    |1562    |7193    |33      |0       |2       |0       |424     |276     |4       |2       |1       |0       |
+|  u_reg_config               |reg_config         |111     |0       |166     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|  u_sgdma_app                |sgdma_app          |519     |78      |439     |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_cfg_regrw              |cfg_regrw          |3       |0       |68      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_tst_ctrl               |app_tst_ctrl       |19      |13      |14      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_c2h0r              |usr_c2h0r          |141     |0       |140     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_h2c0w              |usr_h2c0w          |162     |65      |114     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_lp0rw              |usr_lp0rw          |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_usr_regrw              |usr_regrw          |47      |0       |103     |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_ram512x32            |ram512x32          |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|  u_sgdma_subsys             |sgdma_subsys       |6481    |940     |4623    |24      |0       |2       |0       |422     |275     |1       |2       |1       |0       |
+|    u_ep_core                |pcie_ep_core       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |2       |1       |0       |
+|    u_ep_dbi_init_mux        |ep_dbi_init_mux    |153     |0       |195     |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_pcie_cfg_rom         |ep_cfg_rom         |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_sgdma_ip               |sgdma_ip           |6265    |883     |4351    |22      |0       |2       |0       |422     |275     |0       |0       |0       |0       |
+|      u_drv_usrrw            |drv_usrrw          |70      |0       |101     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_dscpr_cal            |dscpr_cal          |219     |78      |134     |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_dscpr_sfifo512x64  |sfifo512x64        |64      |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_dscpw_cal            |dscpw_cal          |218     |78      |134     |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_dscpw_sfifo512x64  |sfifo512x64        |64      |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_excep_hndl           |excep_hndl         |10      |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_irq_hndl             |irq_hndl           |33      |0       |21      |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_irq_sfifo512x16    |sfifo512x16        |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_arb              |mrd_arb            |182     |0       |98      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_axi4s0           |mrd_axi4s0         |985     |13      |453     |0       |0       |0       |0       |224     |144     |0       |0       |0       |0       |
+|      u_mrd_relor            |mrd_relor          |188     |36      |157     |5       |0       |0       |0       |6       |3       |0       |0       |0       |0       |
+|        u_mrd_ram512x128     |ram512x128         |0       |0       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_mrd_ram512x27      |ram512x27          |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_rx               |mrd_rx             |441     |0       |469     |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |
+|        u_mrd_dram           |dram32x13          |21      |0       |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_schd             |mrd_schd           |60      |15      |22      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mrd_tlp              |mrd_tlp            |174     |12      |139     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mwr_arb              |mwr_arb            |224     |0       |95      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mwr_axi4s0           |mwr_axi4s0         |869     |80      |712     |4       |0       |1       |0       |192     |128     |0       |0       |0       |0       |
+|        u_mwr_dram32x13      |dram32x13          |0       |0       |0       |0       |0       |1       |0       |0       |0       |0       |0       |0       |0       |
+|        u_mwr_safifo512x128  |safifo512x128      |452     |11      |338     |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_mwr_tlp              |mwr_tlp            |243     |25      |146     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_pcie_cfgrw           |pcie_cfgrw         |94      |0       |110     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_perf_stat            |perf_stat          |254     |238     |246     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_rdscp_cal            |rdscp_cal          |382     |137     |311     |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_rdscp_sfifo512x128 |sfifo512x128       |0       |0       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_sgdma_ctrl           |sgdma_ctrl         |51      |34      |40      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_sgdma_regrw          |sgdma_regrw        |1140    |0       |633     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_wdscp_cal            |wdscp_cal          |401     |137     |326     |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_wdscp_sfifo512x128 |sfifo512x128       |0       |0       |0       |4       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_status_sig             |status_sig         |0       |25      |23      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_sys_ctrl               |sys_ctrl           |48      |19      |53      |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|      u_sys_pll              |sys_pll            |1       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|  u_swith                    |swith              |394     |0       |388     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|  uut                        |python             |1167    |544     |1547    |8       |0       |0       |0       |2       |1       |3       |0       |0       |0       |
+|    DPRAMA1                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DPRAMA2                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DPRAMB1                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DPRAMB2                  |DPRAM              |0       |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    DRAM_reverse             |DRAM_reverse       |188     |175     |267     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      fifo0                  |fifo_generator_0   |28      |0       |70      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    SYNC_ASYNC_RST           |SYNC_ASYNC_RST     |0       |0       |2       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    WRADDATA                 |WRADDATA           |122     |91      |164     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    gen_sp                   |gen_sp             |11      |34      |38      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    op                       |op                 |1       |0       |3       |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    signal                   |signal             |62      |34      |97      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    trigger                  |trigger            |26      |36      |20      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    uADConfig1               |ADconfig           |99      |25      |75      |0       |0       |0       |0       |2       |1       |0       |0       |0       |0       |
+|    u_cis_exposure1          |cis_exposure       |152     |51      |79      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_cis_exposure2          |cis_exposure       |117     |34      |65      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|    u_pll                    |pll                |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|    u_pll3                   |pll3               |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|    u_ubus_top               |ubus_top           |365     |47      |591     |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
+|      u_local_bus_slve_cis   |local_bus_slve_cis |365     |47      |591     |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|        u_uart_2dsp          |uart_2dsp          |135     |47      |82      |0       |0       |0       |0       |0       |0       |0       |0       |0       |0       |
+|      u_pll2                 |pll2               |0       |0       |0       |0       |0       |0       |0       |0       |0       |1       |0       |0       |0       |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "pcie_scan" ...
+SYN-4010 : Pack lib has 85 rtl pack models with 57 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 27323/0 useful/useless nets, 24932/3 useful/useless insts
+SYN-1015 : Optimize round 1, 3 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+SYN-4002 : Packing 7190 DFF/LATCH to SEQ ...
+SYN-1001 : Remove 76 carry adders
+SYN-4009 : Pack 75 carry chain into lslice
+SYN-4012 : Packed 0 FxMUX
+RUN-1003 : finish command "optimize_gate -maparea pcie_scan_gate.area" in  30.951627s wall, 30.453125s user + 0.484375s system = 30.937500s CPU (100.0%)
+
+RUN-1004 : used memory is 1578 MB, reserved memory is 1635 MB, peak memory is 2054 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model pcie_scan
+SYN-1032 : 28923/0 useful/useless nets, 24879/105 useful/useless insts
+SYN-5044 CRITICAL-WARNING: The net's pin: pin "phy1_ref_pad_clk_m" in ../../../../src/sgdma_ip/ip/pcie_ep_core.v(691) is connected to a constant net, which can not be set to hardwire. It will disconnect.
+SYN-5044 CRITICAL-WARNING: The net's pin: pin "phy1_ref_pad_clk_p" in ../../../../src/sgdma_ip/ip/pcie_ep_core.v(691) is connected to a constant net, which can not be set to hardwire. It will disconnect.
+SYN-1001 : ADC: Instance "u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst" LOCATION="X0Y160Z0"
+RUN-1002 : start command "export_db pcie_scan_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1003 : finish command "export_db pcie_scan_gate.db" in  2.256116s wall, 3.921875s user + 0.031250s system = 3.953125s CPU (175.2%)
+
+RUN-1004 : used memory is 1579 MB, reserved memory is 1636 MB, peak memory is 2054 MB
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20241024_150128.log"

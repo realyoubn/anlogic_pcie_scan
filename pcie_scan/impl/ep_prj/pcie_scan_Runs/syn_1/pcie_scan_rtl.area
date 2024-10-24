@@ -1,0 +1,113 @@
+standard
+***Report Model: pcie_scan Device: PH1A400SFG900***
+
+IO Statistics
+#IO                       105
+  #input                   45
+  #output                  59
+  #inout                    1
+
+Gate Statistics
+#Basic gates            15598
+  #and                   3709
+  #nand                     0
+  #or                    3259
+  #nor                      0
+  #xor                     60
+  #xnor                     0
+  #buf                      0
+  #not                    461
+  #bufif1                   1
+  #MX21                  1315
+  #FADD                     0
+  #DFF                   6793
+  #LATCH                    0
+#MACRO_ADD                349
+#MACRO_EQ                 273
+#MACRO_MULT                 3
+#MACRO_MUX               7385
+#MACRO_OTHERS              34
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------+
+|Instance                     |Module             |gates  |seq    |macros |
++-------------------------------------------------------------------------+
+|top                          |pcie_scan          |8805   |6793   |659    |
+|  u_reg_config               |reg_config         |71     |133    |10     |
+|  u_sgdma_app                |sgdma_app          |251    |439    |27     |
+|    u_cfg_regrw              |cfg_regrw          |13     |68     |0      |
+|    u_tst_ctrl               |app_tst_ctrl       |4      |14     |3      |
+|    u_usr_c2h0r              |usr_c2h0r          |133    |140    |2      |
+|    u_usr_h2c0w              |usr_h2c0w          |72     |114    |19     |
+|    u_usr_lp0rw              |usr_lp0rw          |3      |0      |0      |
+|    u_usr_regrw              |usr_regrw          |26     |103    |3      |
+|      u_ram512x32            |ram512x32          |0      |0      |1      |
+|  u_sgdma_subsys             |sgdma_subsys       |7140   |4284   |301    |
+|    u_ep_core                |pcie_ep_core       |0      |0      |0      |
+|    u_ep_dbi_init_mux        |ep_dbi_init_mux    |698    |195    |11     |
+|      u_pcie_cfg_rom         |ep_cfg_rom         |0      |0      |1      |
+|    u_sgdma_ip               |sgdma_ip           |6424   |4013   |275    |
+|      u_drv_usrrw            |drv_usrrw          |13     |101    |0      |
+|      u_dscpr_cal            |dscpr_cal          |113    |134    |11     |
+|        u_dscpr_sfifo512x64  |sfifo512x64        |0      |0      |1      |
+|      u_dscpw_cal            |dscpw_cal          |103    |134    |11     |
+|        u_dscpw_sfifo512x64  |sfifo512x64        |0      |0      |1      |
+|      u_excep_hndl           |excep_hndl         |47     |4      |0      |
+|      u_irq_hndl             |irq_hndl           |101    |21     |1      |
+|        u_irq_sfifo512x16    |sfifo512x16        |0      |0      |1      |
+|      u_mrd_arb              |mrd_arb            |620    |98     |5      |
+|      u_mrd_axi4s0           |mrd_axi4s0         |62     |453    |11     |
+|      u_mrd_relor            |mrd_relor          |84     |157    |44     |
+|        u_mrd_ram512x128     |ram512x128         |30     |0      |1      |
+|        u_mrd_ram512x27      |ram512x27          |0      |0      |1      |
+|      u_mrd_rx               |mrd_rx             |33     |469    |4      |
+|        u_mrd_dram           |dram32x13          |0      |0      |1      |
+|      u_mrd_schd             |mrd_schd           |39     |22     |9      |
+|      u_mrd_tlp              |mrd_tlp            |47     |139    |3      |
+|      u_mwr_arb              |mwr_arb            |202    |95     |5      |
+|      u_mwr_axi4s0           |mwr_axi4s0         |169    |374    |17     |
+|        u_mwr_dram32x13      |dram32x13          |0      |0      |1      |
+|        u_mwr_safifo512x128  |safifo512x128      |0      |0      |1      |
+|      u_mwr_tlp              |mwr_tlp            |57     |146    |10     |
+|      u_pcie_cfgrw           |pcie_cfgrw         |82     |110    |6      |
+|      u_perf_stat            |perf_stat          |54     |246    |6      |
+|      u_rdscp_cal            |rdscp_cal          |218    |311    |21     |
+|        u_rdscp_sfifo512x128 |sfifo512x128       |1      |0      |1      |
+|      u_sgdma_ctrl           |sgdma_ctrl         |66     |40     |4      |
+|      u_sgdma_regrw          |sgdma_regrw        |4088   |633    |86     |
+|      u_wdscp_cal            |wdscp_cal          |215    |326    |21     |
+|        u_wdscp_sfifo512x128 |sfifo512x128       |0      |0      |1      |
+|    u_status_sig             |status_sig         |0      |23     |1      |
+|    u_sys_ctrl               |sys_ctrl           |18     |53     |9      |
+|      u_sys_pll              |sys_pll            |0      |0      |1      |
+|  u_swith                    |swith              |266    |388    |4      |
+|  uut                        |python             |1077   |1549   |317    |
+|    CISOUT                   |CISOUT             |1      |0      |0      |
+|    DPRAMA1                  |DPRAM              |0      |0      |1      |
+|    DPRAMA2                  |DPRAM              |0      |0      |1      |
+|    DPRAMA3                  |DPRAM              |0      |0      |1      |
+|    DPRAMA4                  |DPRAM              |0      |0      |1      |
+|    DPRAMB1                  |DPRAM              |0      |0      |1      |
+|    DPRAMB2                  |DPRAM              |0      |0      |1      |
+|    DPRAMB3                  |DPRAM              |0      |0      |1      |
+|    DPRAMB4                  |DPRAM              |0      |0      |1      |
+|    DRAM_reverse             |DRAM_reverse       |189    |237    |22     |
+|      fifo0                  |fifo_generator_0   |0      |0      |1      |
+|    SYNC_ASYNC_RST           |SYNC_ASYNC_RST     |0      |2      |0      |
+|    WRADDATA                 |WRADDATA           |68     |196    |21     |
+|    gen_sp                   |gen_sp             |12     |38     |6      |
+|    op                       |op                 |3      |3      |0      |
+|    signal                   |signal             |59     |97     |16     |
+|    trigger                  |trigger            |1      |20     |6      |
+|    uADConfig1               |ADconfig           |64     |75     |20     |
+|    u_cis_exposure1          |cis_exposure       |168    |79     |98     |
+|    u_cis_exposure2          |cis_exposure       |127    |65     |69     |
+|    u_pll                    |pll                |0      |0      |1      |
+|    u_pll3                   |pll3               |0      |0      |1      |
+|    u_ubus_top               |ubus_top           |339    |591    |44     |
+|      u_local_bus_slve_cis   |local_bus_slve_cis |339    |591    |43     |
+|        u1                   |CRC4_D16           |30     |0      |0      |
+|        u2                   |CRC4_D16           |30     |0      |0      |
+|        u_uart_2dsp          |uart_2dsp          |124    |82     |29     |
+|      u_pll2                 |pll2               |0      |0      |1      |
++-------------------------------------------------------------------------+

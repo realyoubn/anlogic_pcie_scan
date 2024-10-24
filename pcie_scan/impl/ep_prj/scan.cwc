@@ -1,0 +1,120 @@
+<chipwatcher project_name="sgdma_subs_exam" bit_file="sgdma_subs_exam_Runs/phy_1/sgdma_subs_exam.bit" bid_file="sgdma_subs_exam_Runs/phy_1/sgdma_subs_exam_inst.bid" chip_name="PH1A400SFG900">
+<!-- HMAC is: 1ac4d60a3e65df6496a2038c6cc7c8bee9a499ff92340873a82d03458e6f4e35 -->
+	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
+		<clock clk_name="clk_cis" polarity="posedge"/>
+		<config bram_name="auto_chipwatcher_0_logicbram" sample_depth="512"/>
+		<signal_vec>
+			<data_nets>
+				<net name="u_reg_config/red_times1[0]"/>
+				<net name="u_reg_config/red_times1[10]"/>
+				<net name="u_reg_config/red_times1[11]"/>
+				<net name="u_reg_config/red_times1[12]"/>
+				<net name="u_reg_config/red_times1[13]"/>
+				<net name="u_reg_config/red_times1[14]"/>
+				<net name="u_reg_config/red_times1[15]"/>
+				<net name="u_reg_config/red_times1[1]"/>
+				<net name="u_reg_config/red_times1[2]"/>
+				<net name="u_reg_config/red_times1[3]"/>
+				<net name="u_reg_config/red_times1[4]"/>
+				<net name="u_reg_config/red_times1[5]"/>
+				<net name="u_reg_config/red_times1[6]"/>
+				<net name="u_reg_config/red_times1[7]"/>
+				<net name="u_reg_config/red_times1[8]"/>
+				<net name="u_reg_config/red_times1[9]"/>
+				<net name="u_reg_config/sp_time[0]"/>
+				<net name="u_reg_config/sp_time[10]"/>
+				<net name="u_reg_config/sp_time[11]"/>
+				<net name="u_reg_config/sp_time[12]"/>
+				<net name="u_reg_config/sp_time[13]"/>
+				<net name="u_reg_config/sp_time[14]"/>
+				<net name="u_reg_config/sp_time[15]"/>
+				<net name="u_reg_config/sp_time[16]"/>
+				<net name="u_reg_config/sp_time[17]"/>
+				<net name="u_reg_config/sp_time[18]"/>
+				<net name="u_reg_config/sp_time[19]"/>
+				<net name="u_reg_config/sp_time[1]"/>
+				<net name="u_reg_config/sp_time[20]"/>
+				<net name="u_reg_config/sp_time[21]"/>
+				<net name="u_reg_config/sp_time[22]"/>
+				<net name="u_reg_config/sp_time[23]"/>
+				<net name="u_reg_config/sp_time[24]"/>
+				<net name="u_reg_config/sp_time[25]"/>
+				<net name="u_reg_config/sp_time[26]"/>
+				<net name="u_reg_config/sp_time[27]"/>
+				<net name="u_reg_config/sp_time[28]"/>
+				<net name="u_reg_config/sp_time[29]"/>
+				<net name="u_reg_config/sp_time[2]"/>
+				<net name="u_reg_config/sp_time[30]"/>
+				<net name="u_reg_config/sp_time[31]"/>
+				<net name="u_reg_config/sp_time[3]"/>
+				<net name="u_reg_config/sp_time[4]"/>
+				<net name="u_reg_config/sp_time[5]"/>
+				<net name="u_reg_config/sp_time[6]"/>
+				<net name="u_reg_config/sp_time[7]"/>
+				<net name="u_reg_config/sp_time[8]"/>
+				<net name="u_reg_config/sp_time[9]"/>
+			</data_nets>
+			<watcher_nodes>
+				<bus name="u_reg_config/red_times1" radix="bin" state="collapse" op="dont_care" type="reg">
+					<net name="u_reg_config/red_times1[15]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[14]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[13]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[12]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[11]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[10]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[9]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[8]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[7]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[6]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[5]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[4]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[3]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[2]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[1]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/red_times1[0]" type="reg" trigger="enable"/>
+				</bus>
+				<bus name="u_reg_config/sp_time" radix="bin" state="collapse" op="dont_care" type="reg">
+					<net name="u_reg_config/sp_time[31]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[30]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[29]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[28]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[27]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[26]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[25]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[24]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[23]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[22]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[21]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[20]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[19]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[18]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[17]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[16]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[15]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[14]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[13]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[12]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[11]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[10]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[9]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[8]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[7]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[6]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[5]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[4]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[3]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[2]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[1]" type="reg" trigger="enable"/>
+					<net name="u_reg_config/sp_time[0]" type="reg" trigger="enable"/>
+				</bus>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="auto_chipwatcher_0_trigger" position="pre">
+			<condition level="1" enabled="yes" type="basic_and">
+				u_reg_config/red_times1[0] == low && u_reg_config/red_times1[10] == low && u_reg_config/red_times1[11] == low && u_reg_config/red_times1[12] == low && u_reg_config/red_times1[13] == low && u_reg_config/red_times1[14] == low && u_reg_config/red_times1[15] == low && u_reg_config/red_times1[1] == low && u_reg_config/red_times1[2] == low && u_reg_config/red_times1[3] == low && u_reg_config/red_times1[4] == low && u_reg_config/red_times1[5] == low && u_reg_config/red_times1[6] == low && u_reg_config/red_times1[7] == low && u_reg_config/red_times1[8] == low && u_reg_config/red_times1[9] == low && u_reg_config/sp_time[0] == low && u_reg_config/sp_time[10] == low && u_reg_config/sp_time[11] == low && u_reg_config/sp_time[12] == low && u_reg_config/sp_time[13] == low && u_reg_config/sp_time[14] == low && u_reg_config/sp_time[15] == low && u_reg_config/sp_time[16] == low && u_reg_config/sp_time[17] == low && u_reg_config/sp_time[18] == low && u_reg_config/sp_time[19] == low && u_reg_config/sp_time[1] == low && u_reg_config/sp_time[20] == low && u_reg_config/sp_time[21] == low && u_reg_config/sp_time[22] == low && u_reg_config/sp_time[23] == low && u_reg_config/sp_time[24] == low && u_reg_config/sp_time[25] == low && u_reg_config/sp_time[26] == low && u_reg_config/sp_time[27] == low && u_reg_config/sp_time[28] == low && u_reg_config/sp_time[29] == low && u_reg_config/sp_time[2] == low && u_reg_config/sp_time[30] == low && u_reg_config/sp_time[31] == low && u_reg_config/sp_time[3] == low && u_reg_config/sp_time[4] == low && u_reg_config/sp_time[5] == low && u_reg_config/sp_time[6] == low && u_reg_config/sp_time[7] == low && u_reg_config/sp_time[8] == low && u_reg_config/sp_time[9] == low
+			</condition>
+			<log>
+			</log>
+		</trigger>
+	</instance>
+</chipwatcher>

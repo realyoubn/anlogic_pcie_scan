@@ -1,0 +1,11 @@
+#set_pin_assignment	{ app_auxclk_in }		{ LOCATION = U27; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }	#IO_L23P_12,D19
+set_pin_assignment	{ app_auxclk } { LOCATION = AD12; IOSTANDARD = DIFF_SSTL135; }
+
+#set_pin_assignment	{ data_tx_en_button_n }	{ LOCATION = L13; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }	#IO_L15P_14
+set_pin_assignment	{ data_tx_en_button_n } { LOCATION = U24; IOSTANDARD = LVCMOS33; }
+
+#set_pin_assignment {core_clk_led} { LOCATION = J11; IOSTANDARD = LVCMOS33;  }#IO_L15N_14 //led1  
+set_pin_assignment {core_clk_led} { LOCATION = R19; IOSTANDARD = LVCMOS33;  }#IO_L10P_14 //led3 
+set_pin_assignment {user_lnk_up} { LOCATION = U20; IOSTANDARD = LVCMOS33;  }#IO_L10N_14  
+
+set_inst_assignment u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst {LOCATION = x0y160z0}

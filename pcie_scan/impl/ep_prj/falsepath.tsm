@@ -1,0 +1,19 @@
+ph1_400
+13 0 0 0 0 0 0 0
+0.000 0.000 sgdma_subsys_exam ph1_400 PH1A400SFG900 Ideal 2 14 0
+
+Timing group statistics: 
+
+	Exceptions:
+		Check Type:	MAX
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		              0     set_false_path -from [ get_clocks {aux_clk} ] -to [ get_clocks {pll_out_clk} ]  
+		              0     set_false_path -from [ get_clocks {pll_out_clk} ] -to [ get_clocks {aux_clk} ]  
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		              0     set_false_path -from [ get_clocks {aux_clk} ] -to [ get_clocks {pll_out_clk} ]  
+		              0     set_false_path -from [ get_clocks {pll_out_clk} ] -to [ get_clocks {aux_clk} ]  
+

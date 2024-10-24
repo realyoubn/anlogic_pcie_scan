@@ -1,0 +1,53 @@
+set_pin_assignment	{ app_auxclk }		{ LOCATION = U27; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }	#IO_L23P_12,D19
+#set_pin_assignment	{ app_auxclk } { LOCATION = AD12; IOSTANDARD = DIFF_SSTL135; }
+
+set_pin_assignment	{ app_power_up_rst_n }	{ LOCATION = L13; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }	#IO_L15P_14
+#set_pin_assignment	{ app_power_up_rst_n } { LOCATION = U24; IOSTANDARD = LVCMOS33; }
+
+set_pin_assignment {led0} { LOCATION = J11; IOSTANDARD = LVCMOS33;  }#IO_L15N_14 //led1  
+#set_pin_assignment {core_clk_led} { LOCATION = T23; IOSTANDARD = LVCMOS33;  }#IO_L10P_14 //led3 
+set_pin_assignment {user_lnk_up} { LOCATION = K11; IOSTANDARD = LVCMOS33;  }#IO_L10N_14  
+
+set_inst_assignment u_sgdma_subsys/u_sys_ctrl/u_sys_pll/pll_inst {LOCATION = x0y160z0}
+set_pin_assignment	{ SCK1 }	{ LOCATION = AF28; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ SDI1 }	{ LOCATION = AD29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ SEN1 }	{ LOCATION = AE29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ cisclk1 }	{ LOCATION = AB29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+set_pin_assignment	{ in1[0] }	{ LOCATION = Y29; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[10] }	{ LOCATION = AH20; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[11] }	{ LOCATION = AG20; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[12] }	{ LOCATION = AE21; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[13] }	{ LOCATION = AD21; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[14] }	{ LOCATION = AG30; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[15] }	{ LOCATION = AH30; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[1] }	{ LOCATION = W29; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[2] }	{ LOCATION = AA26; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[3] }	{ LOCATION = Y26; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[4] }	{ LOCATION = AA23; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[5] }	{ LOCATION = AA22; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[6] }	{ LOCATION = AB23; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[7] }	{ LOCATION = AB22; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[8] }	{ LOCATION = AC21; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ in1[9] }	{ LOCATION = AC20; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ led1A_b }	{ LOCATION = AB28; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led1A_g }	{ LOCATION = AC29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led1A_r }	{ LOCATION = AC30; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ mclk1 }	{ LOCATION = W27; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ si1 }	{ LOCATION = AB30; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ vsmp1 }	{ LOCATION = AE28; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ x0_p }	{ LOCATION = C29; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ x1_p }	{ LOCATION = G29; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ x2_p }	{ LOCATION = B30; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ x3_p }	{ LOCATION = C24; IOSTANDARD = LVDS25; }
+set_pin_assignment	{ xclk_p }	{ LOCATION = A16; IOSTANDARD = LVDS25; }
+
+#set_pin_assignment	{ APB_M_0_clk }	{ LOCATION = AK29; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ clk_cis }	{ LOCATION = AG27; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ mclk }	{ LOCATION = AJ27; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ vsmp }	{ LOCATION = AH26; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+#set_pin_assignment	{ clk_wram }	{ LOCATION = AJ26; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ ubus_rx }	{ LOCATION = AJ27; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ ubus_tx }	{ LOCATION = AH26; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+
